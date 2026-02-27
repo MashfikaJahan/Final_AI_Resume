@@ -1,0 +1,40 @@
+---
+description: Repo-wide standards for this research project (reproducibility, structure, outputs, documentation)
+alwaysApply: true
+---
+
+# Research Repo Standards (Reproducible + readable)
+
+## Structure (match the repo’s intent)
+
+- **Raw data** lives in `Dataset/` (never mutate in-place).
+- **Derived artifacts** go to `data/processed/` (versionable if small, otherwise keep recipes + checksums).
+- **Run outputs** go to `outputs/` with timestamps and config snapshot.
+- **Configs** go to `configs/` (YAML/TOML). Secrets do not go in configs; use env vars (`.env` local only).
+
+### Canonical artifacts (keep names stable)
+
+- `data/processed/resumes_clean.parquet`
+- `data/processed/variants.parquet`
+- `data/processed/variants_scored.csv`
+- `data/processed/eval_summary/` (or `eval_summary.csv` if flat)
+- `outputs/<timestamp>/` for figures + reports
+
+## Reproducibility (non-negotiable)
+
+- Every run is **seeded**, **config-driven**, and writes a short **run manifest**:
+  - git commit hash (if available)
+  - config path + resolved config
+  - seed(s)
+  - input dataset file + hash/size
+  - output paths produced
+
+## Documentation
+
+- Keep `README.md` runnable: prerequisites, install, “one command” run, and where artifacts land.
+- `OUTLINE.md` is allowed to evolve; keep it consistent with actual directory names and entrypoints.
+
+## AI-friendly writing
+
+- Prefer explicit names (“variant_generator”, “variants_scored”) over cleverness.
+- When describing methodology, state assumptions and what is held constant (control vs variant).
