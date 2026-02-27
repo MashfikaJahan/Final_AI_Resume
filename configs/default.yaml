@@ -1,0 +1,82 @@
+data:
+  raw_path: "Dataset/AI_Resume_Screening.csv"
+  processed_dir: "data/processed"
+  clean_parquet: "data/processed/resumes_clean.parquet"
+  variants_parquet: "data/processed/variants.parquet"
+  variants_scored: "data/processed/variants_scored.csv"
+  eval_summary_dir: "data/processed/eval_summary"
+  dropped_log: "data/processed/dropped_rows.log"
+
+validation:
+  required_columns:
+    - Resume_ID
+    - Name
+    - Skills
+    - "Experience (Years)"
+    - Education
+    - Certifications
+    - "Job Role"
+    - "Recruiter Decision"
+    - "Salary Expectation ($)"
+    - "Projects Count"
+    - "AI Score (0-100)"
+  job_role_allowlist:
+    - AI Researcher
+    - Data Scientist
+    - Cybersecurity Analyst
+    - Software Engineer
+  recruiter_decision_values:
+    - Hire
+    - Reject
+  education_levels:
+    - B.Sc
+    - MBA
+    - B.Tech
+    - M.Tech
+    - PhD
+  min_rows_after_clean: 950
+
+variants:
+  types:
+    - phrasing
+    - abbreviation
+    - word_order
+    - placement
+  per_resume: 4
+
+scoring:
+  methods:
+    - tfidf
+    - bm25
+  top_k: [10, 25, 50]
+  threshold: 0.5
+
+  job_descriptions:
+    AI Researcher: >-
+      Looking for an AI Researcher with expertise in deep learning, neural networks,
+      TensorFlow, PyTorch, NLP, natural language processing, Python programming,
+      machine learning research, and published research experience.
+    Data Scientist: >-
+      Seeking a Data Scientist skilled in Python, SQL, machine learning, deep learning,
+      statistical analysis, data visualization, predictive modeling, and big data
+      analytics.
+    Cybersecurity Analyst: >-
+      Hiring a Cybersecurity Analyst with knowledge of ethical hacking, penetration testing,
+      network security, Linux administration, cybersecurity frameworks, firewall management,
+      and vulnerability assessment.
+    Software Engineer: >-
+      Looking for a Software Engineer proficient in Java, C++, SQL, React, JavaScript,
+      software development, system design, agile methodologies, and version control.
+
+logistic_regression:
+  test_size: 0.2
+  class_weight: "balanced"
+  max_iter: 1000
+  reports_dir: "reports"
+
+visualization:
+  output_dir: "outputs"
+  dpi: 300
+  figsize: [10, 6]
+
+seed: 42
