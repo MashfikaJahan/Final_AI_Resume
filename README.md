@@ -46,7 +46,7 @@ Final_AI_Resume/
 ├── Dataset/                # Input CSV (AI_Resume_Screening.csv)
 ├── data/                   # Processed outputs (parquet, stats, dropped log)
 │   └── processed/          # resumes_clean.parquet, variants.parquet, variants_scored.csv, eval_summary
-├── docs/                   # Documentation (DATA_INGESTION_PLAN.md)
+├── implementation plan/    # Design docs (DATA_INGESTION_PLAN.md, Eval_plan.md, Pipeline_plan.md)
 ├── outputs/                # Results tables + figures (timestamped)
 ├── reports/                # Summary outputs (Markdown / HTML / PDF, logistic regression reports)
 ├── src/                    # Python modules
@@ -61,7 +61,7 @@ Final_AI_Resume/
 │   ├── visualization.py  # Publication-ready plots
 │   └── report.py         # Paper-style Markdown report generator
 ├── main.py                 # CLI entry point for full pipeline runs
-├── requirements.txt       # Pinned dependencies
+├── requirements.txt       # Dependencies (minimum versions)
 ├── RESULTS.md              # ← Auto-generated results (tables + figures, viewable on GitHub)
 └── README.md
 ```

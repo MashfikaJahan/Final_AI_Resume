@@ -208,8 +208,8 @@ def _section_stats(eval_dir: Path) -> str:
         "confirming the practical importance of wording choices."
     )
     lines.append(
-        "- Word-order variants are generally non-significant under TF-IDF "
-        "(as expected from bag-of-words invariance) but reach significance under BM25."
+        "- Word-order variants are non-significant under both TF-IDF and BM25, "
+        "confirming that token reordering alone has negligible impact on lexical screening methods."
     )
     lines.append("")
     return "\n".join(lines)

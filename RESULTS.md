@@ -176,7 +176,7 @@ Wilcoxon signed-rank test (two-sided, paired) with Cohen's d effect sizes. Each 
 **Key findings:**
 - 20 of 32 comparisons are statistically significant (p < .05).
 - 8 comparisons show *large* effect sizes (|d| ≥ 0.8), confirming the practical importance of wording choices.
-- Word-order variants are generally non-significant under TF-IDF (as expected from bag-of-words invariance) but reach significance under BM25.
+- Word-order variants are non-significant under both TF-IDF and BM25, confirming that token reordering alone has negligible impact on lexical screening methods.
 
 ## Table 5 — Logistic Regression: Predicting Recruiter Decision
 
