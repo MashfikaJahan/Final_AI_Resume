@@ -11,98 +11,71 @@ Automated resume screening is pervasive: approximately 75% of recruiters use app
 
 ---
 
-## 2. Wording, Phrasing, and Language Effects in Hiring
+## 2. Literature Summaries
 
-### 2.1 Human Judgment: Resume Language and Hireability
+### "An Automated Resume Screening System Using Natural Language Processing and Similarity" (2020)
 
-**Madera et al. (2024)** — *Journal of Business and Psychology* (Springer)  
-"When Words Matter: Communal and Agentic Language on Men and Women's Resumes"
+"An Automated Resume Screening System Using Natural Language Processing and Similarity" (2020) explains that an automated resume screening method is meant to reduce the time and cost of manually reviewing many applications while making shortlisting more consistent. The system extracts important resume information such as skills, education, and experience from unstructured text using NLP, then turns resumes and job descriptions into vectors so they can be compared. Candidates are ranked using similarity scoring (e.g., cosine similarity) between resume content and the job description, which produces a prioritized list for recruiters. This paper shows how basic NLP and similarity scoring can support faster candidate ranking.
 
-Examined how men and women describe themselves on resumes and how language affects career-related outcomes. Women used more communal language (collaborative, supportive terms) than men; communal language negatively impacted perceived leadership ability and hireability for women applying to masculine-typed jobs. This demonstrates that **word choice—not just skill presence—affects human evaluations**, which motivates studying analogous effects in automated systems.
+**Finding:** The system demonstrates that NLP-based extraction plus similarity scoring can effectively rank candidates and speed up the screening process.
 
-- **Relevance to RQ1/RQ2:** Evidence that phrasing type (communal vs agentic) affects outcomes; supports investigating variation types (phrasing, abbreviation, etc.) in ATS.
+### "Developing an Intelligent Resume Screening Tool With AI-Driven Analysis and Recommendation Features" (2025)
 
-### 2.2 Job Ad Wording and Applicant Behavior
+"Developing an Intelligent Resume Screening Tool With AI-Driven Analysis and Recommendation Features" (2025) describes an AI-based resume analyzer that automates resume parsing and analysis for recruiters while also giving improvement feedback to applicants. The tool focuses on extracting structured information from resumes (like contact details, education, experience, and skills) using NLP techniques and then storing and analyzing that information to support hiring decisions. In addition to recruiter-facing analytics (such as skill and role trends), the system includes applicant-facing recommendations to help strengthen resume quality and alignment with job requirements. This paper is useful for showing resume screening tools as full systems—not just ranking—combining automation, usability, and analytics.
 
-**Abraham, Hallermeier & Stein (2024)** — *Journal of Economic Behavior & Organization* (Elsevier)  
-"Words matter: Experimental evidence from job applications"
+**Findings:** The tool shows that combining resume parsing with analytics and recommendations can support recruiter decisions and improve applicant resume quality.
 
-Randomized experiment with ~60,000 viewers across 600+ Uber job postings. Removing optional qualifications increased applications by 7% but affected men and women differently: less-skilled women applied more, while some highly skilled women self-selected out. **Wording changes have measurable, sometimes heterogeneous effects** on who applies and who gets considered.
+### "Mitigating demographic bias in AI-based resume filtering" (2020)
 
-- **Relevance to RQ1:** Wording matters even before screening; ATS inputs are shaped by ad phrasing and applicant self-presentation.
+"Mitigating demographic bias in AI-based resume filtering" (2020) researches how AI resume filters can accidentally become unfair because the way people write, and their word choices, can correlate with demographic groups. The paper treats resume screening as a text-matching problem and proposes a fairness-focused adjustment to common keyword methods, which is described as fair-TF-IDF, so the system is less likely to give higher scores to one group just because of language patterns rather than qualifications. This paper focuses on making automated resume filtering more fair while still ranking resumes by relevance to a job.
 
-### 2.3 Algorithmic Writing Assistance and Hiring Outcomes
+**Findings:** The proposed fair-TF-IDF approach reduces demographic-related bias in ranking while still keeping useful relevance-based matching.
 
-**van Inwegen et al. (2024/2025)** — Management Science (INFORMS) / NBER  
-"Algorithmic Writing Assistance on Jobseekers' Resumes Increases Hires"
+### "When words matter: Communal and agentic language on men and women's resumes" (2024)
 
-Large-scale field experiment (~500K jobseekers). Treated applicants receiving algorithmic writing assistance were hired ~8% more often; improved readability and fewer errors, with no evidence of lower employer satisfaction. Supports a "clarity view"—better wording helps employers assess ability rather than merely signaling it.
+"When words matter: Communal and agentic language on men and women's resumes" (2024) studies how different types of wording on resumes affect how candidates are judged. They used communal language, such as helpful, supportive, collaborative vs. agentic language, such as leader, achiever, and independent. The study shows that wording can influence perceptions of fit and competence, and that these effects can relate to gender norms in hiring contexts. This paper supports the idea that resumes are not judged only on skills, but also on how those skills are described.
 
-- **Relevance to RQ1/RQ3:** Direct evidence that **wording quality affects hiring outcomes**; suggests ATS and downstream human review respond to lexical variation.
+**Findings:** Communal vs. agentic wording changes how applicants are perceived, and the impact is connected to gender expectations in hiring.
 
----
+### "The probabilistic relevance framework: BM25 and beyond" (2009)
 
-## 3. Automated Screening: Methods and Lexical Sensitivity
+"The probabilistic relevance framework: BM25 and beyond" (2009) explains the theory behind BM25, one of the most common ranking algorithms used to match a query to documents. The paper describes how BM25 scores relevance using term frequency and document-length normalization and discusses extensions that improve ranking in different settings. For resume screening research, this is important because BM25 is a strong baseline for job description and resume matching.
 
-### 3.1 TF-IDF, BM25, and Resume–Job Matching
+**Findings:** BM25 is shown to be a strong, reliable baseline ranking method, and extensions can improve performance in specialized retrieval settings.
 
-**Robertson & Zaragoza (2009)** — *Foundations and Trends in Information Retrieval*  
-"The Probabilistic Relevance Framework: BM25 and Beyond"
+### "Algorithmic writing assistance on jobseekers' resumes increases hires" (2024/2025)
 
-Canonical reference for BM25 and probabilistic relevance. TF-IDF and BM25 are lexical methods: they match on term overlap and frequency. **By design, they are sensitive to exact phrasing and abbreviation**—"Python" vs "Python programming" may produce different scores. No direct resume application, but foundational for interpreting project methodology.
+"Algorithmic writing assistance on jobseekers' resumes increases hires" (2024/2025) tests whether helping jobseekers improve resume writing changes real outcomes and reports evidence that writing assistance increases hiring. The paper suggests that how clearly and effectively a resume is written can affect employer decisions, even when a person's underlying experience is the same. This shows that wording tools can have real downstream effects, not just score changes.
 
-- **Relevance to RQ1/RQ3:** Explains why lexical methods are expected to vary with wording; motivates paired control-variant experiments.
+**Findings:** Resume writing assistance leads to higher hiring rates, showing wording improvements can directly affect real job outcomes.
 
-**Bhat et al. (2007)** — ACM SIGIR  
-"Matching resumes and jobs based on relevance models"
+### "Gender, race, and intersectional bias in resume screening via language model retrieval" (2024)
 
-Applied relevance modeling to resume–job matching at SIGIR. Uses classical IR techniques; lexical representation assumptions imply susceptibility to synonymy and phrasing variation.
+"Gender, race, and intersectional bias in resume screening via language model retrieval" (2024) studies bias when large language models are used to retrieve/rank candidates. The paper finds that demographic cues, such as names associated with gender or race, can influence which candidates are surfaced and ranked higher; this also includes intersectional patterns. This work shows how bias can happen early in hiring pipelines through retrieval and ranking, not only through final decisions.
 
-**Bhattacharya et al. (2010)** — ACM CIKM  
-"PROSPECT: A system for screening candidates for recruitment"
+**Findings:** LLM-based retrieval/ranking can systematically favor or disadvantage groups based on demographic cues, including intersectional effects.
 
-IBM system for resume screening using structured extraction (skills, experience) and IR ranking. Extracted facets improved ranking accuracy by ~30%, but underlying matching still relies on term-based representations that can be affected by phrasing and abbreviation.
+### "Gender and positional biases in LLM-based hiring decisions: Evidence from comparative CV/résumé evaluations" (2025)
 
-- **Relevance to RQ2:** Systems combining extraction and IR are widely used; understanding which variation types (abbreviation, word order) matter most is practically important.
+"Gender and positional biases in LLM-based hiring decisions" (2025) evaluates whether LLMs show unfair preferences when comparing two similar resumes. It reports patterns where decisions can shift based on gender cues and also based on position/order effects. They mention that the model may favor the first candidate shown. This shows that even when qualifications are held constant, LLM-based screening can still be influenced by non-skill cues and prompt structure.
 
----
+**Findings:** The study finds both gender bias and order bias, where models often prefer the candidate shown first even with similar qualifications.
 
-## 4. Bias, Fairness, and Mitigation in Resume Screening
+### "PROSPECT: A system for screening candidates for recruitment" (2010)
 
-### 4.1 Socio-Linguistic Bias and Fair-TF-IDF
+"PROSPECT: A system for screening candidates for recruitment" (2010) presents a practical system that helps recruiters screen large applicant pools by extracting structured information from resumes such as skills, experience, education, and supporting filtering through facets. It uses information retrieval ranking to prioritize candidates for a job. This research is about improving recruiter efficiency through extraction, search, and ranking rather than testing wording sensitivity.
 
-**Deshpande, Pan & Foulds (2020)** — ACM UMAP  
-"Mitigating Demographic Bias in AI-based Resume Filtering"
+**Findings:** Using structured extraction and faceted filtering improves recruiter efficiency and supports better candidate search and ranking.
 
-Demonstrates that **socio-linguistic characteristics in resume writing** correlate with protected attributes; standard TF-IDF matching can perpetuate demographic bias. Proposes **fair-TF-IDF** to mitigate socio-linguistic bias while preserving matching quality.
+### "Matching resumes and jobs based on relevance models" (2007)
 
-- **Relevance to RQ1/RQ3:** Directly addresses lexical/TF-IDF methods; shows that wording correlates with demographics and affects outcomes. Fair-TF-IDF is a mitigation approach for lexical methods.
+"Matching resumes and jobs based on relevance models" (2007) explores resume job matching as an information retrieval problem and compares different relevance modeling approaches, including methods that use the structure of resumes. For example, they used sections/fields instead of treating the document as plain text. The researchers mentioned that representation choices, such as structured vs. unstructured can affect matching quality. This paper supports the idea that screening performance depends heavily on how text is modeled.
 
-### 4.2 Embedding and LLM-Based Screening: Bias and Variation Sensitivity
-
-**Wilson & Caliskan (2024)** — AAAI/ACM AIES  
-"Gender, Race, and Intersectional Bias in Resume Screening via Language Model Retrieval"
-
-Audit of Massive Text Embedding (MTE) models in resume screening. Found significant bias: White-associated names favored in 85.1% of cases; Black males disadvantaged in up to 100% of cases. Document length and corpus frequency of names also affected selection.
-
-- **Relevance to RQ3:** Embedding-based screening introduces different bias patterns but remains sensitive to document characteristics. Compares lexical vs embedding behavior.
-
-**Rozado (2024)** — PeerJ Computer Science  
-"Gender and positional biases in LLM-based hiring decisions: evidence from comparative CV/résumé evaluations"
-
-Tested 22 LLMs on resume evaluation across 70 professions. LLMs showed positional bias (preference for first-listed candidate) and gender-associated name effects; gender-neutral labels reduced some biases.
-
-- **Relevance to RQ3:** LLMs exhibit structural biases separate from lexical matching but relevant for comparing screening methods.
-
-### 4.3 Procedural Justice and Candidate Experience
-
-**IEEE (2024)** — "Procedural Justice and Fairness in Automated Resume Parsers for Tech Hiring"
-
-Examines candidate perceptions of fairness in automated resume parsing. Supports the importance of transparency and consistency in automated screening—directly relevant when lexical variation causes arbitrary rank shifts.
+**Findings:** The study finds that using resume/job structure (fields/sections) can improve matching performance compared to treating documents as one block of text.
 
 ---
 
-## 5. Synthesis: Gaps and Alignment with Project
+## 3. Synthesis: Gaps and Alignment with Project
 
 | Theme | Key Finding | Project Alignment |
 |-------|-------------|-------------------|
@@ -110,34 +83,36 @@ Examines candidate perceptions of fairness in automated resume parsing. Supports
 | Lexical methods | TF-IDF/BM25 are term-dependent; sensitive to phrasing, abbreviation (Robertson & Zaragoza; Deshpande et al.) | RQ1, RQ2: Quantify effect; identify which variation types matter |
 | Fairness | Socio-linguistic bias in TF-IDF; fair-TF-IDF as mitigation (Deshpande et al.) | Phase 2 mitigation; evidence-based guidance |
 | Method comparison | Lexical vs embedding/LLM show different bias patterns (Wilson & Caliskan; Rozado) | RQ3: Consistency across methods |
-| IR systems | PROSPECT, relevance models use extraction + IR (Bhattacharya et al.; Bhat et al.) | Methodological context for scoring pipelines |
+| IR systems | PROSPECT, relevance models use extraction + IR (Singh et al.; Yi et al.) | Methodological context for scoring pipelines |
 
 **Identified gap:** Prior work addresses bias mitigation and wording effects in human or LLM settings, but **systematic quasi-experimental quantification of lexical variation effects** (phrasing, abbreviation, word order, placement) within ATS-like pipelines (TF-IDF, BM25) remains sparse. This project fills that gap by holding resume content constant and varying only wording, then measuring Δ score, rank shift, top-K inclusion, and threshold pass/fail.
 
 ---
 
-## 6. Reference List (Credible Sources Only)
+## 4. References (APA 7)
 
-1. **Deshpande, K. V., Pan, S., & Foulds, J. R. (2020).** Mitigating demographic bias in AI-based resume filtering. *Adjunct Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '20)*. ACM. https://dl.acm.org/doi/10.1145/3386392.3399569
+1. Abhishek, K. L., Niranjanamurthy, M., Aric, S., Ansarullah, S. I., Sinha, A., Tejani, G., & Shah, M. A. (2025). Developing an intelligent resume screening tool with AI-driven analysis and recommendation features. *Applied AI Letters*, 6, e116. https://doi.org/10.1002/ail2.116
 
-2. **Madera, J. M., et al. (2024/2025).** When words matter: Communal and agentic language on men and women's resumes. *Journal of Business and Psychology*, 40, 479–496. Springer. https://doi.org/10.1007/s10869-024-09969-0
+2. Daryani, C., Chhabra, G. S., Patel, H., Chhabra, I. K., & Patel, R. (2020). An automated resume screening system using natural language processing and similarity. *Topics in Intelligent Computing and Industry Design*, 2(2), 99–103. https://doi.org/10.26480/etit.02.2020.99.103
 
-3. **Robertson, S., & Zaragoza, H. (2009).** The probabilistic relevance framework: BM25 and beyond. *Foundations and Trends in Information Retrieval*, 3(4), 333–389. Now Publishers.
+3. Deshpande, K. V., Pan, S., & Foulds, J. R. (2020). Mitigating demographic bias in AI-based resume filtering. In *Adjunct Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '20)* (pp. 1–6). ACM. https://dl.acm.org/doi/10.1145/3386392.3399569
 
-4. **van Inwegen, E., Munyikwa, Z., & Horton, J. J. (2024/2025).** Algorithmic writing assistance on jobseekers' resumes increases hires. *Management Science*, 71(12), 10144–10164. INFORMS. NBER Working Paper 30886.
+4. Madera, J. M., Ng, L., Zajac, S., & Hebl, M. R. (2024). When words matter: Communal and agentic language on men and women's resumes. *Journal of Business and Psychology*, 40(2), 479–496. https://doi.org/10.1007/s10869-024-09969-0
 
-5. **Wilson, K., & Caliskan, A. (2024).** Gender, race, and intersectional bias in resume screening via language model retrieval. *Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES '24)*, 7(1), 1578–1590. https://doi.org/10.1609/aies.v7i1.31748
+5. Robertson, S., & Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and beyond. *Foundations and Trends in Information Retrieval*, 3(4), 333–389. https://doi.org/10.1561/1500000019
 
-6. **Rozado, D. (2024).** Gender and positional biases in LLM-based hiring decisions: evidence from comparative CV/résumé evaluations. *PeerJ Computer Science*. https://peerj.com/articles/cs-3628/
+6. Rozado, D. (2025). Gender and positional biases in LLM-based hiring decisions: Evidence from comparative CV/résumé evaluations. *PeerJ Computer Science*, 11, e3628. https://doi.org/10.7717/peerj-cs.3628
 
-7. **Bhattacharya, P., et al. (2010).** PROSPECT: A system for screening candidates for recruitment. *Proceedings of the 19th ACM Conference on Information and Knowledge Management (CIKM '10)*. ACM. https://dl.acm.org/doi/10.1145/1871437.1871523
+7. Singh, A., Catherine, R., Visweswariah, K., Chenthamarakshan, V., & Kambhatla, N. (2010). PROSPECT: A system for screening candidates for recruitment. In *Proceedings of the 19th ACM International Conference on Information and Knowledge Management (CIKM '10)* (pp. 659–668). ACM. https://dl.acm.org/doi/10.1145/1871437.1871523
 
-8. **Bhat, F., et al. (2007).** Matching resumes and jobs based on relevance models. *Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval*. ACM. https://dl.acm.org/doi/10.1145/1277741.1277920
+8. van Inwegen, E., Munyikwa, Z., & Horton, J. J. (2025). Algorithmic writing assistance on jobseekers' resumes increases hires. *Management Science*, 71(12), 10144–10164. https://doi.org/10.1287/mnsc.2024.04528
 
-9. **Abraham, L., Hallermeier, J., & Stein, A. (2024).** Words matter: Experimental evidence from job applications. *Journal of Economic Behavior & Organization*, 225, 348–391. Elsevier. https://doi.org/10.1016/j.jebo.2024.03.017
+9. Wilson, K., & Caliskan, A. (2024). Gender, race, and intersectional bias in resume screening via language model retrieval. *Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society (AIES '24)*, 7(1), 1578–1590. https://doi.org/10.1609/aies.v7i1.31748
+
+10. Yi, X., Allan, J., & Croft, W. B. (2007). Matching resumes and jobs based on relevance models. In *Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval* (pp. 809–810). ACM. https://dl.acm.org/doi/10.1145/1277741.1277920
 
 ---
 
-## 7. Exclusion Note
+## 5. Exclusion Note
 
-**Excluded:** (1) IJARESM—predatory indicators. (2) Blogs, industry reports, practitioner white papers, and gray literature. (3) ArXiv preprints without confirmed peer-reviewed publication. All cited sources are peer-reviewed academic journals or ACM/IEEE/AAAI conference proceedings.
+**Excluded:** (1) IJARESM—predatory indicators. (2) IJSRCSEIT/TechnoScience Academy—predatory indicators. (3) Blogs, industry reports, practitioner white papers, and gray literature. (4) ArXiv preprints without confirmed peer-reviewed publication. All cited sources are peer-reviewed academic journals or ACM/IEEE/AAAI conference proceedings.
