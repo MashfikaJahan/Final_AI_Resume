@@ -1,0 +1,48 @@
+{
+  "accuracy": 0.951,
+  "roc_auc": 0.9934,
+  "classification_report": {
+    "0": {
+      "precision": 0.8008658008658008,
+      "recall": 0.9840425531914894,
+      "f1-score": 0.883054892601432,
+      "support": 188.0
+    },
+    "1": {
+      "precision": 0.9960988296488946,
+      "recall": 0.9433497536945813,
+      "f1-score": 0.9690069576217584,
+      "support": 812.0
+    },
+    "accuracy": 0.951,
+    "macro avg": {
+      "precision": 0.8984823152573478,
+      "recall": 0.9636961534430353,
+      "f1-score": 0.9260309251115952,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.959395020237673,
+      "recall": 0.951,
+      "f1-score": 0.952847969397937,
+      "support": 1000.0
+    }
+  },
+  "n_train": 4000,
+  "n_test": 1000,
+  "features": [
+    "Experience (Years)",
+    "Projects Count",
+    "Salary Expectation ($)",
+    "score_tfidf",
+    "score_bm25",
+    "rank_tfidf",
+    "percentile_tfidf",
+    "rank_bm25",
+    "percentile_bm25"
+  ],
+  "class_distribution_train": {
+    "Hire": 3248,
+    "Reject": 752
+  }
+}

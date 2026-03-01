@@ -53,11 +53,17 @@ def _select_features(df: pd.DataFrame) -> list[str]:
     return [c for c in CANDIDATE_FEATURES if c in df.columns]
 
 
-def run_logistic_regression(
+def _fit_and_report(
     df: pd.DataFrame,
+    features: list[str],
     config: dict[str, Any],
+    suffix: str = "",
 ) -> dict[str, Any]:
-    """Fit logistic regression on variants_scored data."""
+    """Fit one logistic regression model and write all artifacts.
+
+    *suffix* is appended to filenames to distinguish model variants
+    (e.g. ``_no_ai_score``).
+    """
     seed = config.get("seed", 42)
     lr_cfg = config.get("logistic_regression", {})
     test_size = lr_cfg.get("test_size", 0.2)
@@ -66,16 +72,12 @@ def run_logistic_regression(
     reports_dir = Path(lr_cfg.get("reports_dir", "reports"))
     reports_dir.mkdir(parents=True, exist_ok=True)
 
-    df = df.copy()
-    df["target"] = (df["Recruiter Decision"].astype(str).str.strip() == "Hire").astype(int)
-
-    features = _select_features(df)
-    if not features:
-        logger.error("No usable features found — aborting logistic regression")
-        return {}
-
     df_model = df[features + ["target"]].dropna()
-    logger.info("Logistic regression — %d rows, %d features: %s", len(df_model), len(features), features)
+    tag = f" ({suffix.strip('_')})" if suffix else ""
+    logger.info(
+        "Logistic regression%s — %d rows, %d features: %s",
+        tag, len(df_model), len(features), features,
+    )
 
     X = df_model[features].values
     y = df_model["target"].values
@@ -103,7 +105,7 @@ def run_logistic_regression(
     auc = roc_auc_score(y_test, y_prob)
     report = classification_report(y_test, y_pred, output_dict=True)
 
-    metrics = {
+    metrics: dict[str, Any] = {
         "accuracy": round(acc, 4),
         "roc_auc": round(auc, 4),
         "classification_report": report,
@@ -116,39 +118,64 @@ def run_logistic_regression(
         },
     }
 
-    with open(reports_dir / "logistic_regression_metrics.json", "w") as f:
+    with open(reports_dir / f"logistic_regression_metrics{suffix}.json", "w") as f:
         json.dump(metrics, f, indent=2)
 
     coef_df = pd.DataFrame({
         "feature": features,
         "coefficient": model.coef_[0],
     }).sort_values("coefficient", ascending=False)
-    coef_df.to_csv(reports_dir / "logistic_regression_coefficients.csv", index=False)
+    coef_df.to_csv(reports_dir / f"logistic_regression_coefficients{suffix}.csv", index=False)
 
     pred_df = df.copy()
     X_all = scaler.transform(pred_df[features].fillna(0).values)
     pred_df["predicted_hire"] = model.predict(X_all)
     pred_df["hire_probability"] = model.predict_proba(X_all)[:, 1]
-    pred_df.to_csv(reports_dir / "logistic_regression_predictions.csv", index=False)
+    pred_df.to_csv(reports_dir / f"logistic_regression_predictions{suffix}.csv", index=False)
 
-    _write_summary_md(metrics, coef_df, reports_dir)
-    _plot_coefficients(coef_df, reports_dir, config)
-    _plot_roc(y_test, y_prob, auc, reports_dir, config)
+    _write_summary_md(metrics, coef_df, reports_dir, suffix=suffix)
+    _plot_coefficients(coef_df, reports_dir, config, suffix=suffix)
+    _plot_roc(y_test, y_prob, auc, reports_dir, config, suffix=suffix)
 
     logger.info(
-        "Logistic regression complete — accuracy=%.4f, AUC=%.4f → %s",
-        acc, auc, reports_dir,
+        "Logistic regression%s complete — accuracy=%.4f, AUC=%.4f → %s",
+        tag, acc, auc, reports_dir,
     )
     return metrics
+
+
+def run_logistic_regression(
+    df: pd.DataFrame,
+    config: dict[str, Any],
+) -> dict[str, Any]:
+    """Fit two logistic regression models: full and screening-only (no AI Score)."""
+    df = df.copy()
+    df["target"] = (df["Recruiter Decision"].astype(str).str.strip() == "Hire").astype(int)
+
+    features_full = _select_features(df)
+    if not features_full:
+        logger.error("No usable features found — aborting logistic regression")
+        return {}
+
+    metrics_full = _fit_and_report(df, features_full, config, suffix="")
+
+    features_no_ai = [f for f in features_full if f != "AI Score (0-100)"]
+    if features_no_ai and "AI Score (0-100)" in features_full:
+        _fit_and_report(df, features_no_ai, config, suffix="_no_ai_score")
+
+    return metrics_full
 
 
 def _write_summary_md(
     metrics: dict,
     coef_df: pd.DataFrame,
     reports_dir: Path,
+    *,
+    suffix: str = "",
 ) -> None:
+    tag = f" ({suffix.strip('_').replace('_', ' ').title()})" if suffix else ""
     lines = [
-        "# Logistic Regression Summary",
+        f"# Logistic Regression Summary{tag}",
         "",
         "## Performance",
         "",
@@ -171,23 +198,26 @@ def _write_summary_md(
         lines.append(f"| {row['feature']} | {row['coefficient']:.4f} |")
     lines.append("")
 
-    (reports_dir / "logistic_regression_summary.md").write_text("\n".join(lines))
+    (reports_dir / f"logistic_regression_summary{suffix}.md").write_text("\n".join(lines))
 
 
 def _plot_coefficients(
     coef_df: pd.DataFrame,
     reports_dir: Path,
     config: dict,
+    *,
+    suffix: str = "",
 ) -> None:
+    tag = f" ({suffix.strip('_').replace('_', ' ').title()})" if suffix else ""
     dpi = config.get("visualization", {}).get("dpi", 300)
     fig, ax = plt.subplots(figsize=(8, max(4, len(coef_df) * 0.5)))
     colors = ["#2ecc71" if c > 0 else "#e74c3c" for c in coef_df["coefficient"]]
     ax.barh(coef_df["feature"], coef_df["coefficient"], color=colors)
     ax.set_xlabel("Coefficient (standardized)")
-    ax.set_title("Logistic Regression — Feature Coefficients")
+    ax.set_title(f"Logistic Regression — Feature Coefficients{tag}")
     ax.axvline(0, color="grey", linewidth=0.8, linestyle="--")
     fig.tight_layout()
-    fig.savefig(reports_dir / "logistic_regression_coefficients.png", dpi=dpi)
+    fig.savefig(reports_dir / f"logistic_regression_coefficients{suffix}.png", dpi=dpi)
     plt.close(fig)
 
 
@@ -197,7 +227,10 @@ def _plot_roc(
     auc_score: float,
     reports_dir: Path,
     config: dict,
+    *,
+    suffix: str = "",
 ) -> None:
+    tag = f" ({suffix.strip('_').replace('_', ' ').title()})" if suffix else ""
     dpi = config.get("visualization", {}).get("dpi", 300)
     fpr, tpr, _ = roc_curve(y_test, y_prob)
     fig, ax = plt.subplots(figsize=(6, 6))
@@ -205,10 +238,10 @@ def _plot_roc(
     ax.plot([0, 1], [0, 1], "k--", linewidth=0.8)
     ax.set_xlabel("False Positive Rate")
     ax.set_ylabel("True Positive Rate")
-    ax.set_title("ROC Curve — Recruiter Decision Prediction")
+    ax.set_title(f"ROC Curve — Recruiter Decision{tag}")
     ax.legend(loc="lower right")
     fig.tight_layout()
-    fig.savefig(reports_dir / "logistic_regression_roc.png", dpi=dpi)
+    fig.savefig(reports_dir / f"logistic_regression_roc{suffix}.png", dpi=dpi)
     plt.close(fig)
 
 

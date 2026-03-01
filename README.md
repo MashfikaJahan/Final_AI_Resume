@@ -56,10 +56,13 @@ Final_AI_Resume/
 │   ├── variant_generator.py # Controlled lexical swaps
 │   ├── scoring.py         # TF-IDF, BM25, embedding similarity
 │   ├── evaluation.py      # Δ score, rank shift, top-K, threshold
-│   ├── logistic_regression.py # Logistic regression on Recruiter Decision
-│   └── visualization.py  # Plots and tables
+│   ├── statistical_tests.py # Wilcoxon signed-rank + Cohen's d
+│   ├── logistic_regression.py # Logistic regression (full + screening-only)
+│   ├── visualization.py  # Publication-ready plots
+│   └── report.py         # Paper-style Markdown report generator
 ├── main.py                 # CLI entry point for full pipeline runs
 ├── requirements.txt       # Pinned dependencies
+├── RESULTS.md              # ← Auto-generated results (tables + figures, viewable on GitHub)
 └── README.md
 ```
 
@@ -100,35 +103,35 @@ Final_AI_Resume/
 
 All comparisons are **paired** (control vs. variant) under identical job-role / JD conditions.
 
+## Statistical Significance Tests
+
+Paired Wilcoxon signed-rank tests with Cohen's d effect sizes are computed for every (variant type × Job Role × screening method) combination. This provides:
+
+- **p-values** confirming whether observed score differences are statistically significant
+- **Effect sizes** (Cohen's d) quantifying practical importance (negligible / small / medium / large)
+- Output: `data/processed/eval_summary/statistical_tests.csv`
+
 ## Logistic Regression Analysis
 
-In addition to stability metrics, the project includes a **logistic regression** model that predicts `Recruiter Decision` (Hire vs other) from screening outputs and basic resume features. This analysis helps quantify which features (screening scores, ranks, experience, etc.) are most predictive of hiring decisions and provides interpretable coefficients for understanding the relationship between automated screening metrics and recruiter outcomes.
+In addition to stability metrics, the project includes **logistic regression** models that predict `Recruiter Decision` (Hire vs other) from screening outputs and basic resume features. Two models are fit:
 
-- **Input**: `data/processed/variants_scored.csv` (produced by `python main.py --config configs/default.yaml`)
+1. **Full model** — all available features including `AI Score (0-100)`
+2. **Screening-only model** — excludes `AI Score` to isolate the predictive power of ATS-like scoring features
+
+This dual-model approach addresses the near-perfect AUC of the full model (driven by the synthetic `AI Score` variable) by providing a comparison model using only screening-derived features.
+
+- **Input**: `data/processed/variants_scored.csv`
 - **Model**: scikit-learn `LogisticRegression` with class weighting
-- **Features (if present)**:
-  - `AI Score (0-100)`
-  - `Experience (Years)`
-  - `Projects Count`
-  - `Salary Expectation ($)`
-  - `score_tfidf`, `score_bm25`, `score_embedding`
-  - `rank_tfidf`, `percentile_tfidf`, `rank_bm25`, `percentile_bm25`
-- **Target**: `Recruiter Decision` (mapped to 1 for `Hire`, 0 for any other value)
+- **Target**: `Recruiter Decision` (Hire = 1, other = 0)
 
-Run the analysis:
+Artifacts are written under `reports/` (with `_no_ai_score` suffix for the screening-only model):
 
-```bash
-python -m src.logistic_regression
-```
-
-Artifacts are written under `reports/`:
-
-- `logistic_regression_metrics.json` – metrics and dataset summary
-- `logistic_regression_coefficients.csv` – feature coefficients (interpretability)
-- `logistic_regression_predictions.csv` – per-variant predictions and probabilities
-- `logistic_regression_summary.md` – human-readable summary for the research report
-- `logistic_regression_coefficients.png` – horizontal bar chart of feature coefficients (publication-ready, 300 DPI)
-- `logistic_regression_roc.png` – ROC curve with AUC score (publication-ready, 300 DPI)
+- `logistic_regression_metrics[_no_ai_score].json` – metrics and dataset summary
+- `logistic_regression_coefficients[_no_ai_score].csv` – feature coefficients
+- `logistic_regression_predictions[_no_ai_score].csv` – per-variant predictions
+- `logistic_regression_summary[_no_ai_score].md` – human-readable summary
+- `logistic_regression_coefficients[_no_ai_score].png` – coefficient bar chart (300 DPI)
+- `logistic_regression_roc[_no_ai_score].png` – ROC curve with AUC (300 DPI)
 
 ## Quickstart
 
@@ -154,7 +157,12 @@ python main.py --config configs/default.yaml
 python main.py --config configs/default.yaml --stage evaluate
 python main.py --config configs/default.yaml --stage visualize
 
+# Generate Markdown report (tables + figures viewable on GitHub)
+python main.py --config configs/default.yaml --stage report
+# → see RESULTS.md at the repo root
+
 # View outputs directly (no Excel download needed)
+#   RESULTS.md              ← tables + figures, renders on GitHub
 #   data/processed/variants_scored.csv
 #   data/processed/eval_summary/eval_summary.csv
 #   outputs/figures/*.png

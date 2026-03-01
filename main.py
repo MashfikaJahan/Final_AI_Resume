@@ -7,8 +7,10 @@ Usage:
     python main.py --config configs/default.yaml --stage variants   # NLP variants + sentiment QA
     python main.py --config configs/default.yaml --stage score      # score variants
     python main.py --config configs/default.yaml --stage evaluate   # evaluation metrics
-    python main.py --config configs/default.yaml --stage logreg     # logistic regression
+    python main.py --config configs/default.yaml --stage stats      # statistical significance tests
+    python main.py --config configs/default.yaml --stage logreg     # logistic regression (full + screening-only)
     python main.py --config configs/default.yaml --stage visualize  # plots
+    python main.py --config configs/default.yaml --stage report     # Markdown results report (viewable on GitHub)
     python main.py --config configs/default.yaml --stage export     # Excel workbook (requires export.enabled: true in config)
 """
 
@@ -35,7 +37,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-STAGES = ["ingest", "sentiment", "variants", "score", "evaluate", "logreg", "visualize", "export"]
+STAGES = ["ingest", "sentiment", "variants", "score", "evaluate", "stats", "logreg", "visualize", "report", "export"]
 
 
 def _git_commit_hash() -> str | None:
@@ -323,6 +325,37 @@ def run_evaluate(config: dict, config_path: str) -> None:
     logger.info("=== evaluation complete ===")
 
 
+# ── Stage: stats ──────────────────────────────────────────────────────
+
+def run_stats(config: dict, config_path: str) -> None:
+    """Run statistical significance tests (Wilcoxon + Cohen's d)."""
+    from src.statistical_tests import run_statistical_tests
+
+    eval_dir = Path(config["data"]["eval_summary_dir"])
+    detail_path = eval_dir / "eval_detail.csv"
+
+    logger.info("=== Stage: statistical_tests ===")
+
+    detail = pd.read_csv(detail_path)
+    results = run_statistical_tests(detail, config)
+
+    write_manifest(
+        stage="statistical_tests",
+        config_path=config_path,
+        config=config,
+        input_path=str(detail_path),
+        input_rows=len(detail),
+        output_path=str(eval_dir / "statistical_tests.csv"),
+        output_rows=len(results),
+        extra={
+            "significant_005": int(results["significant_005"].sum()),
+            "total_tests": len(results),
+        },
+    )
+
+    logger.info("=== statistical_tests complete ===")
+
+
 # ── Stage: logreg ─────────────────────────────────────────────────────
 
 def run_logreg(config: dict, config_path: str) -> None:
@@ -384,6 +417,29 @@ def run_visualize(config: dict, config_path: str) -> None:
     logger.info("=== visualization complete (%d plots) ===", len(plot_paths))
 
 
+# ── Stage: report ─────────────────────────────────────────────────────
+
+def run_report(config: dict, config_path: str) -> None:
+    """Generate Markdown results report (RESULTS.md) viewable on GitHub."""
+    from src.report import generate_report
+
+    logger.info("=== Stage: report ===")
+
+    report_path = generate_report(config)
+
+    write_manifest(
+        stage="report",
+        config_path=config_path,
+        config=config,
+        input_path="(multiple)",
+        input_rows=0,
+        output_path=str(report_path),
+        output_rows=0,
+    )
+
+    logger.info("=== report complete → %s ===", report_path)
+
+
 # ── Stage: export ─────────────────────────────────────────────────────
 
 def run_export(config: dict, config_path: str) -> None:
@@ -419,8 +475,10 @@ STAGE_FNS = {
     "variants": run_variants,
     "score": run_score,
     "evaluate": run_evaluate,
+    "stats": run_stats,
     "logreg": run_logreg,
     "visualize": run_visualize,
+    "report": run_report,
     "export": run_export,
 }
 

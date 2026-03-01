@@ -23,6 +23,30 @@ import seaborn as sns
 
 logger = logging.getLogger(__name__)
 
+_VARIANT_LABELS = {
+    "phrasing": "Phrasing",
+    "abbreviation": "Abbreviation",
+    "word_order": "Word Order",
+    "placement": "Placement",
+    "control": "Control",
+}
+
+_METHOD_LABELS = {"tfidf": "TF-IDF", "bm25": "BM25", "embedding": "Embedding"}
+
+
+def _pretty_variant(df: pd.DataFrame) -> pd.DataFrame:
+    """Return a copy with human-readable variant_type labels."""
+    out = df.copy()
+    if "variant_type" in out.columns:
+        out["variant_type"] = out["variant_type"].map(
+            lambda v: _VARIANT_LABELS.get(v, v.replace("_", " ").title()),
+        )
+    return out
+
+
+def _method_label(m: str) -> str:
+    return _METHOD_LABELS.get(m, m.upper())
+
 
 def _out_dir(config: dict) -> Path:
     d = Path(config.get("visualization", {}).get("output_dir", "outputs")) / "figures"
@@ -52,12 +76,12 @@ def plot_score_distributions(
         if col not in detail.columns:
             continue
         fig, ax = plt.subplots(figsize=figsize)
-        plot_df = detail[["variant_type", "Job Role", col]].copy()
+        plot_df = _pretty_variant(detail[["variant_type", "Job Role", col]])
         plot_df = plot_df.rename(columns={col: "Score"})
         sns.boxplot(data=plot_df, x="variant_type", y="Score", hue="Job Role", ax=ax)
-        ax.set_title(f"Score Distribution — {m.upper()}")
+        ax.set_title(f"Score Distribution — {_method_label(m)}")
         ax.set_xlabel("Variant Type")
-        ax.set_ylabel(f"{m.upper()} Score")
+        ax.set_ylabel(f"{_method_label(m)} Score")
         ax.legend(title="Job Role", bbox_to_anchor=(1.02, 1), loc="upper left")
         fig.tight_layout()
         p = out / f"score_distribution_{m}.png"
@@ -84,11 +108,12 @@ def plot_rank_shifts(
         if col not in detail.columns:
             continue
         fig, ax = plt.subplots(figsize=figsize)
-        sns.boxplot(data=detail, x="variant_type", y=col, hue="Job Role", ax=ax)
+        plot_df = _pretty_variant(detail[["variant_type", "Job Role", col]])
+        sns.boxplot(data=plot_df, x="variant_type", y=col, hue="Job Role", ax=ax)
         ax.axhline(0, color="grey", linewidth=0.8, linestyle="--")
-        ax.set_title(f"Rank Shift — {m.upper()} (positive = improved)")
+        ax.set_title(f"Rank Shift — {_method_label(m)} (positive = improved)")
         ax.set_xlabel("Variant Type")
-        ax.set_ylabel("Rank Shift")
+        ax.set_ylabel("Rank Shift (positions)")
         ax.legend(title="Job Role", bbox_to_anchor=(1.02, 1), loc="upper left")
         fig.tight_layout()
         p = out / f"rank_shift_{m}.png"
@@ -117,15 +142,16 @@ def plot_topk_flip_rates(
         if not available:
             continue
 
-        grouped = summary.groupby("variant_type", observed=True)[available].mean()
+        plot_summary = _pretty_variant(summary)
+        grouped = plot_summary.groupby("variant_type", observed=True)[available].mean()
 
         fig, ax = plt.subplots(figsize=figsize)
         grouped.plot(kind="bar", ax=ax)
-        ax.set_title(f"Top-K Flip Rate — {m.upper()}")
+        ax.set_title(f"Top-K Flip Rate — {_method_label(m)}")
         ax.set_xlabel("Variant Type")
         ax.set_ylabel("Flip Rate (fraction of resumes)")
         ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
-        ax.legend(title="K value", labels=[f"K={k}" for k in k_values if f"topk_{m}_k{k}_flip_mean" in available])
+        ax.legend(title="K Value", labels=[f"K={k}" for k in k_values if f"topk_{m}_k{k}_flip_mean" in available])
         fig.tight_layout()
         p = out / f"topk_flip_{m}.png"
         fig.savefig(p, dpi=dpi)
@@ -151,7 +177,8 @@ def plot_delta_heatmap(
         if col not in summary.columns:
             continue
 
-        pivot = summary.pivot_table(
+        plot_summary = _pretty_variant(summary)
+        pivot = plot_summary.pivot_table(
             index="variant_type", columns="Job Role", values=col, aggfunc="mean",
         )
 
@@ -160,7 +187,8 @@ def plot_delta_heatmap(
             pivot, annot=True, fmt=".4f", cmap="RdYlGn", center=0,
             linewidths=0.5, ax=ax,
         )
-        ax.set_title(f"Mean Delta Score — {m.upper()} (variant − control)")
+        ax.set_title(f"Mean Δ Score — {_method_label(m)} (variant − control)")
+        ax.set_ylabel("Variant Type")
         fig.tight_layout()
         p = out / f"delta_heatmap_{m}.png"
         fig.savefig(p, dpi=dpi)
@@ -186,11 +214,12 @@ def plot_threshold_flips(
         if col not in summary.columns:
             continue
 
-        grouped = summary.groupby("variant_type", observed=True)[col].mean()
+        plot_summary = _pretty_variant(summary)
+        grouped = plot_summary.groupby("variant_type", observed=True)[col].mean()
 
         fig, ax = plt.subplots(figsize=figsize)
         grouped.plot(kind="bar", ax=ax, color="#3498db")
-        ax.set_title(f"Threshold Flip Rate — {m.upper()} (threshold={config['scoring']['threshold']})")
+        ax.set_title(f"Threshold Flip Rate — {_method_label(m)} (threshold = {config['scoring']['threshold']})")
         ax.set_xlabel("Variant Type")
         ax.set_ylabel("Flip Rate")
         ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
