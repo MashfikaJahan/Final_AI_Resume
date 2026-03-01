@@ -92,4 +92,7 @@ visualization:
   dpi: 300
   figsize: [10, 6]
 
+export:
+  excel_path: "outputs/all_artifacts.xlsx"
+
 seed: 42

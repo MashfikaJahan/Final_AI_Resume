@@ -9,6 +9,7 @@ Usage:
     python main.py --config configs/default.yaml --stage evaluate   # evaluation metrics
     python main.py --config configs/default.yaml --stage logreg     # logistic regression
     python main.py --config configs/default.yaml --stage visualize  # plots
+    python main.py --config configs/default.yaml --stage export     # Excel workbook
 """
 
 from __future__ import annotations
@@ -34,7 +35,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-STAGES = ["ingest", "sentiment", "variants", "score", "evaluate", "logreg", "visualize"]
+STAGES = ["ingest", "sentiment", "variants", "score", "evaluate", "logreg", "visualize", "export"]
 
 
 def _git_commit_hash() -> str | None:
@@ -383,6 +384,29 @@ def run_visualize(config: dict, config_path: str) -> None:
     logger.info("=== visualization complete (%d plots) ===", len(plot_paths))
 
 
+# ── Stage: export ─────────────────────────────────────────────────────
+
+def run_export(config: dict, config_path: str) -> None:
+    """Export all artifacts to a single multi-sheet Excel workbook."""
+    from src.export_excel import export_excel
+
+    logger.info("=== Stage: export ===")
+
+    out_path = export_excel(config)
+
+    write_manifest(
+        stage="export",
+        config_path=config_path,
+        config=config,
+        input_path="(multiple)",
+        input_rows=0,
+        output_path=str(out_path),
+        output_rows=0,
+    )
+
+    logger.info("=== export complete ===")
+
+
 # ── Dispatch ──────────────────────────────────────────────────────────
 
 STAGE_FNS = {
@@ -393,6 +417,7 @@ STAGE_FNS = {
     "evaluate": run_evaluate,
     "logreg": run_logreg,
     "visualize": run_visualize,
+    "export": run_export,
 }
 
 

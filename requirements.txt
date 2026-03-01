@@ -9,3 +9,4 @@ nltk>=3.8
 spacy>=3.6
 vaderSentiment>=3.3.2
 textblob>=0.18
+openpyxl>=3.1
