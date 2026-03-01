@@ -69,7 +69,8 @@ Final_AI_Resume/
 
 | Column | Role in Study |
 |--------|---------------|
-| Resume_ID | Unique identifier |
+| Resume_ID | Unique numeric identifier |
+| Resume_Hash_ID | Deterministic anonymized identifier (added during preprocessing) |
 | Skills | Primary text field for lexical-variation experiments |
 | Education | Supplemental resume context |
 | Certifications | Fill missing with empty string |

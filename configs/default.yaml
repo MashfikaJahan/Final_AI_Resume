@@ -10,7 +10,6 @@ data:
 validation:
   required_columns:
     - Resume_ID
-    - Name
     - Skills
     - "Experience (Years)"
     - Education

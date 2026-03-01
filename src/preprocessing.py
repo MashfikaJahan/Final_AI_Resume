@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import logging
 import re
 from datetime import datetime, timezone
@@ -31,9 +32,9 @@ def normalize_certifications(series: pd.Series) -> pd.Series:
     return s
 
 
-def normalize_name(series: pd.Series) -> pd.Series:
-    """Strip whitespace, title-case."""
-    return series.astype(str).str.strip().str.title()
+def _hash_id(resume_id: int | str) -> str:
+    """Deterministic 12-char hex hash from Resume_ID for anonymized sharing."""
+    return hashlib.sha256(str(resume_id).encode()).hexdigest()[:12]
 
 
 # ---------------------------------------------------------------------------
@@ -178,10 +179,13 @@ def preprocess(df: pd.DataFrame, config: dict) -> pd.DataFrame:
     """Full pipeline: clean -> cast -> derive -> validate -> return."""
     dropped_log = Path(config["data"]["dropped_log"])
 
+    # --- Drop PII & add anonymized identifier ---
+    df = df.drop(columns=["Name"], errors="ignore")
+    df["Resume_Hash_ID"] = df["Resume_ID"].apply(_hash_id)
+
     # --- Text cleaning ---
     df["Skills"] = clean_skills(df["Skills"])
     df["Certifications"] = normalize_certifications(df["Certifications"])
-    df["Name"] = normalize_name(df["Name"])
 
     # Validate & strip Education
     edu_levels = set(config["validation"]["education_levels"])

@@ -92,7 +92,6 @@ AI_Resume_Screening.csv
 ```
 Required columns (exact names):
   Resume_ID              int
-  Name                   str
   Skills                 str
   Experience (Years)     int/float
   Education              str
@@ -135,14 +134,16 @@ This is the primary experimental field. Cleaning must be conservative to avoid d
 
 This normalizes the 274 "None" entries so downstream code can use simple `if cert:` checks.
 
-#### 3.2.3 `Name` Column
+#### 3.2.3 PII Removal & Anonymized Identifier
 
 | Step | Operation |
 |------|-----------|
-| 1 | Strip whitespace |
-| 2 | Title-case normalization (optional, cosmetic only) |
+| 1 | Drop `Name` column (`errors="ignore"` for safety) |
+| 2 | Add `Resume_Hash_ID` — deterministic 12-char SHA-256 hex of `Resume_ID` |
 
-Name is not used in scoring or variant generation but retained for traceability.
+`Name` is PII and is not used in scoring, variant generation, or evaluation. It is dropped
+at the start of preprocessing to prevent leakage into any downstream artifact. `Resume_Hash_ID`
+provides a stable anonymized identifier for sharing/reporting alongside the numeric `Resume_ID`.
 
 #### 3.2.4 `Education` Column
 
@@ -289,7 +290,6 @@ data:
 validation:
   required_columns:
     - Resume_ID
-    - Name
     - Skills
     - "Experience (Years)"
     - Education
