@@ -1,17 +1,10 @@
 # Literature Review: Lexical Variation Effects in Automated Resume Screening
 
 **Project:** Same Skills, Different Words — A Comparative Quasi-Experimental Analysis  
-**Scope:** Peer-reviewed academic journals and conference proceedings only. No blogs, industry reports, or gray literature. Predatory outlets excluded.
 
 ---
 
-## 1. Introduction & Motivation
-
-Automated resume screening is pervasive: approximately 75% of recruiters use applicant tracking systems (ATS), with companies receiving hundreds of resumes per position (Deshpande et al., 2020). Lexical variations—how candidates phrase the same skills (e.g., "Python" vs "Python programming," "ML" vs "Machine Learning")—may materially affect screening scores and rankings in ATS pipelines that rely on keyword or TF-IDF matching. This review synthesizes credible literature on (a) wording effects in hiring, (b) automated screening methods and their susceptibility to lexical variation, and (c) bias and mitigation in algorithmic resume filtering.
-
----
-
-## 2. Literature Summaries
+## Literature Summaries
 
 ### "An Automated Resume Screening System Using Natural Language Processing and Similarity" (2020)
 
@@ -75,21 +68,7 @@ Automated resume screening is pervasive: approximately 75% of recruiters use app
 
 ---
 
-## 3. Synthesis: Gaps and Alignment with Project
-
-| Theme | Key Finding | Project Alignment |
-|-------|-------------|-------------------|
-| Human wording effects | Phrasing (communal/agentic), writing quality affect hireability (Madera et al.; van Inwegen et al.) | RQ1: Do wording variations change ATS scores? |
-| Lexical methods | TF-IDF/BM25 are term-dependent; sensitive to phrasing, abbreviation (Robertson & Zaragoza; Deshpande et al.) | RQ1, RQ2: Quantify effect; identify which variation types matter |
-| Fairness | Socio-linguistic bias in TF-IDF; fair-TF-IDF as mitigation (Deshpande et al.) | Phase 2 mitigation; evidence-based guidance |
-| Method comparison | Lexical vs embedding/LLM show different bias patterns (Wilson & Caliskan; Rozado) | RQ3: Consistency across methods |
-| IR systems | PROSPECT, relevance models use extraction + IR (Singh et al.; Yi et al.) | Methodological context for scoring pipelines |
-
-**Identified gap:** Prior work addresses bias mitigation and wording effects in human or LLM settings, but **systematic quasi-experimental quantification of lexical variation effects** (phrasing, abbreviation, word order, placement) within ATS-like pipelines (TF-IDF, BM25) remains sparse. This project fills that gap by holding resume content constant and varying only wording, then measuring Δ score, rank shift, top-K inclusion, and threshold pass/fail.
-
----
-
-## 4. References (APA 7)
+## References
 
 1. Abhishek, K. L., Niranjanamurthy, M., Aric, S., Ansarullah, S. I., Sinha, A., Tejani, G., & Shah, M. A. (2025). Developing an intelligent resume screening tool with AI-driven analysis and recommendation features. *Applied AI Letters*, 6, e116. https://doi.org/10.1002/ail2.116
 
@@ -112,7 +91,3 @@ Automated resume screening is pervasive: approximately 75% of recruiters use app
 10. Yi, X., Allan, J., & Croft, W. B. (2007). Matching resumes and jobs based on relevance models. In *Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval* (pp. 809–810). ACM. https://dl.acm.org/doi/10.1145/1277741.1277920
 
 ---
-
-## 5. Exclusion Note
-
-**Excluded:** (1) IJARESM—predatory indicators. (2) IJSRCSEIT/TechnoScience Academy—predatory indicators. (3) Blogs, industry reports, practitioner white papers, and gray literature. (4) ArXiv preprints without confirmed peer-reviewed publication. All cited sources are peer-reviewed academic journals or ACM/IEEE/AAAI conference proceedings.
