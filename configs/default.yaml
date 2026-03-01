@@ -92,6 +92,7 @@ visualization:
   figsize: [10, 6]
 
 export:
+  enabled: false
   excel_path: "outputs/all_artifacts.xlsx"
 
 seed: 42

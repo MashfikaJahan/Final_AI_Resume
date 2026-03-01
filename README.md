@@ -147,9 +147,21 @@ pip install -r requirements.txt
 # Place dataset
 # Download AI_Resume_Screening.csv from Kaggle and put it in Dataset/
 
-# Run pipeline
+# Run full pipeline (Excel export disabled by default)
 python main.py --config configs/default.yaml
-# Results: data/processed/*.parquet and data/processed/*.csv (resumes_clean, variants, variants_scored, eval_summary)
+
+# — or run individual stages —
+python main.py --config configs/default.yaml --stage evaluate
+python main.py --config configs/default.yaml --stage visualize
+
+# View outputs directly (no Excel download needed)
+#   data/processed/variants_scored.csv
+#   data/processed/eval_summary/eval_summary.csv
+#   outputs/figures/*.png
+open outputs/figures   # macOS: opens Finder with all plots
+
+# Optional: generate Excel workbook (set export.enabled: true in config first)
+# python main.py --config configs/default.yaml --stage export
 ```
 
 ## Reproducibility

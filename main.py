@@ -9,7 +9,7 @@ Usage:
     python main.py --config configs/default.yaml --stage evaluate   # evaluation metrics
     python main.py --config configs/default.yaml --stage logreg     # logistic regression
     python main.py --config configs/default.yaml --stage visualize  # plots
-    python main.py --config configs/default.yaml --stage export     # Excel workbook
+    python main.py --config configs/default.yaml --stage export     # Excel workbook (requires export.enabled: true in config)
 """
 
 from __future__ import annotations
@@ -388,6 +388,10 @@ def run_visualize(config: dict, config_path: str) -> None:
 
 def run_export(config: dict, config_path: str) -> None:
     """Export all artifacts to a single multi-sheet Excel workbook."""
+    if not config.get("export", {}).get("enabled", True):
+        logger.info("=== Stage: export — SKIPPED (export.enabled=false) ===")
+        return
+
     from src.export_excel import export_excel
 
     logger.info("=== Stage: export ===")
