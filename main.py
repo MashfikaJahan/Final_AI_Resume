@@ -3,7 +3,8 @@
 Usage:
     python main.py --config configs/default.yaml                    # all stages
     python main.py --config configs/default.yaml --stage ingest     # just ingestion
-    python main.py --config configs/default.yaml --stage variants   # generate variants
+    python main.py --config configs/default.yaml --stage sentiment  # baseline sentiment
+    python main.py --config configs/default.yaml --stage variants   # NLP variants + sentiment QA
     python main.py --config configs/default.yaml --stage score      # score variants
     python main.py --config configs/default.yaml --stage evaluate   # evaluation metrics
     python main.py --config configs/default.yaml --stage logreg     # logistic regression
@@ -33,7 +34,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-STAGES = ["ingest", "variants", "score", "evaluate", "logreg", "visualize"]
+STAGES = ["ingest", "sentiment", "variants", "score", "evaluate", "logreg", "visualize"]
 
 
 def _git_commit_hash() -> str | None:
@@ -128,19 +129,108 @@ def run_ingest(config: dict, config_path: str) -> None:
     logger.info("=== data_ingestion complete ===")
 
 
-# ── Stage: variants ───────────────────────────────────────────────────
+# ── Stage: sentiment (Pipeline_plan §4.1 Stage 2) ────────────────────
+
+def run_sentiment(config: dict, config_path: str) -> None:
+    """Compute sentiment baseline on original skills text."""
+    from src.sentiment import score_dataframe
+
+    clean_parquet = config["data"]["clean_parquet"]
+
+    logger.info("=== Stage: sentiment_baseline ===")
+
+    clean_df = pd.read_parquet(clean_parquet)
+    clean_df = score_dataframe(clean_df, text_column="Skills", prefix="", config=config)
+
+    dist = clean_df["sentiment_label"].value_counts().to_dict()
+    logger.info("Sentiment distribution: %s", dist)
+
+    out_path = Path(clean_parquet)
+    clean_df.to_parquet(out_path, engine="pyarrow", compression="snappy", index=False)
+    logger.info("Parquet updated with sentiment columns → %s", out_path)
+
+    write_manifest(
+        stage="sentiment_baseline",
+        config_path=config_path,
+        config=config,
+        input_path=clean_parquet,
+        input_rows=len(clean_df),
+        output_path=clean_parquet,
+        output_rows=len(clean_df),
+        extra={
+            "neutral_count": int(dist.get("neutral", 0)),
+            "positive_count": int(dist.get("positive", 0)),
+            "negative_count": int(dist.get("negative", 0)),
+        },
+    )
+
+    logger.info("=== sentiment_baseline complete ===")
+
+
+# ── Stage: variants (Pipeline_plan §4.2 Stage 3 + Stage 4 QA) ────────
 
 def run_variants(config: dict, config_path: str) -> None:
-    """Generate controlled skill variants."""
+    """NLP variant generation + sentiment QA (Pipeline_plan §3, §4)."""
+    from src.sentiment import check_sentiment_drift, score_dataframe
     from src.variant_generator import generate_variants
 
     clean_parquet = config["data"]["clean_parquet"]
     variants_parquet = config["data"]["variants_parquet"]
+    sent_cfg = config.get("sentiment", {})
+    tolerance = sent_cfg.get("tolerance", 0.15)
+    drift_action = sent_cfg.get("action_on_drift", "flag")
 
     logger.info("=== Stage: variant_generation ===")
 
     clean_df = pd.read_parquet(clean_parquet)
+
+    # Ensure sentiment baseline exists (Pipeline_plan §4.2 Stage 2 output)
+    if "sentiment_score" not in clean_df.columns:
+        logger.info("Sentiment baseline not found — computing inline")
+        clean_df = score_dataframe(clean_df, text_column="Skills", prefix="", config=config)
+
     variants_df = generate_variants(clean_df, config)
+
+    # --- Sentiment QA (Pipeline_plan §4 Stage 4) ---
+    logger.info("Running sentiment QA on variants …")
+    variants_df = score_dataframe(
+        variants_df, text_column="skills_variant", prefix="variant_", config=config,
+    )
+    variants_df.rename(
+        columns={
+            "variant_sentiment_score": "sentiment_score_variant",
+            "variant_sentiment_label": "sentiment_label_variant",
+            "variant_vader_compound": "vader_compound_variant",
+            "variant_textblob_polarity": "textblob_polarity_variant",
+            "variant_textblob_subjectivity": "textblob_subjectivity_variant",
+        },
+        inplace=True,
+    )
+
+    # Control rows: variant sentiment == original sentiment, zero delta
+    control_mask = variants_df["variant_type"] == "control"
+    variants_df.loc[control_mask, "sentiment_score_variant"] = variants_df.loc[control_mask, "sentiment_score"]
+    variants_df.loc[control_mask, "sentiment_label_variant"] = variants_df.loc[control_mask, "sentiment_label"]
+
+    variants_df = check_sentiment_drift(variants_df, tolerance=tolerance)
+    variants_df.loc[control_mask, "sentiment_delta"] = 0.0
+    variants_df.loc[control_mask, "sentiment_drift_flag"] = False
+
+    n_flagged = int(variants_df["sentiment_drift_flag"].sum())
+    drift_by_type = (
+        variants_df.loc[~control_mask]
+        .groupby("variant_type", observed=True)["sentiment_drift_flag"]
+        .agg(["sum", "mean"])
+    )
+    logger.info("Sentiment drift flagged: %d variants", n_flagged)
+    logger.info("Drift by variant type:\n%s", drift_by_type.to_string())
+
+    n_rejected = 0
+    if drift_action == "reject" and n_flagged > 0:
+        n_before = len(variants_df)
+        variants_df = variants_df.loc[~variants_df["sentiment_drift_flag"] | control_mask].copy()
+        n_rejected = n_before - len(variants_df)
+        logger.info("Rejected %d variants exceeding sentiment tolerance", n_rejected)
 
     out_path = Path(variants_parquet)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -155,7 +245,12 @@ def run_variants(config: dict, config_path: str) -> None:
         input_rows=len(clean_df),
         output_path=variants_parquet,
         output_rows=len(variants_df),
-        extra={"variant_types": config["variants"]["types"]},
+        extra={
+            "variant_types": config["variants"]["types"],
+            "nlp_model": config.get("variants", {}).get("nlp_model", "en_core_web_md"),
+            "sentiment_drift_flagged": n_flagged,
+            "sentiment_drift_rejected": n_rejected,
+        },
     )
 
     logger.info("=== variant_generation complete ===")
@@ -206,7 +301,7 @@ def run_evaluate(config: dict, config_path: str) -> None:
     logger.info("=== Stage: evaluation ===")
 
     scored_df = pd.read_csv(scored_csv)
-    detail, summary = evaluate(scored_df, config)
+    detail, summary, dropped = evaluate(scored_df, config)
 
     write_manifest(
         stage="evaluation",
@@ -216,9 +311,11 @@ def run_evaluate(config: dict, config_path: str) -> None:
         input_rows=len(scored_df),
         output_path=eval_dir,
         output_rows=len(summary),
+        dropped_rows=dropped,
         extra={
             "detail_rows": len(detail),
             "summary_rows": len(summary),
+            "output_path": eval_dir,  # Eval_plan §6: output_path key
         },
     )
 
@@ -290,6 +387,7 @@ def run_visualize(config: dict, config_path: str) -> None:
 
 STAGE_FNS = {
     "ingest": run_ingest,
+    "sentiment": run_sentiment,
     "variants": run_variants,
     "score": run_score,
     "evaluate": run_evaluate,

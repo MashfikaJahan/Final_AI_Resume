@@ -36,6 +36,14 @@ validation:
     - PhD
   min_rows_after_clean: 950
 
+sentiment:
+  vader_weight: 0.6
+  textblob_weight: 0.4
+  positive_threshold: 0.05
+  negative_threshold: -0.05
+  tolerance: 0.15
+  action_on_drift: "flag"
+
 variants:
   types:
     - phrasing
@@ -43,6 +51,11 @@ variants:
     - word_order
     - placement
   per_resume: 4
+  nlp_model: "en_core_web_md"
+  wordnet_pos_filter: true
+  similarity_floor: 0.6
+  top_n_candidates: 3
+  max_replacements_per_skill: 1
 
 scoring:
   methods:
