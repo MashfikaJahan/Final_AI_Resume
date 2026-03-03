@@ -82,7 +82,6 @@ Final_AI_Resume/
 | Recruiter Decision | Downstream outcome label |
 | AI Score (0–100) | Synthetic screening label (used cautiously) |
 
-> **Note:** Place the CSV in `Dataset/` before running. The file is not committed to the repo due to size/licensing.
 
 ## Screening Methods
 
@@ -168,7 +167,7 @@ python main.py --config configs/default.yaml --stage report
 #   outputs/figures/*.png
 open outputs/figures   # macOS: opens Finder with all plots
 
-# Optional: generate Excel workbook (set export.enabled: true in config first)
+# Generate Excel workbook (set export.enabled: true in config first)
 # python main.py --config configs/default.yaml --stage export
 ```
 
