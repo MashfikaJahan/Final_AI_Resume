@@ -78,7 +78,7 @@
 
 4. Madera, J. M., Ng, L., Zajac, S., & Hebl, M. R. (2024). When words matter: Communal and agentic language on men and women's resumes. *Journal of Business and Psychology*, 40(2), 479–496. https://doi.org/10.1007/s10869-024-09969-0
 
-5. Robertson, S., & Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and beyond. *Foundations and Trends in Information Retrieval*, 3(4), 333–389. https://doi.org/10.1561/1500000019
+5. Robertson, S., & Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and beyond. *Foundations and Trends in Information Retrieval*, 3(4), 333–389. DOI: 10.1561/1500000019
 
 6. Rozado, D. (2025). Gender and positional biases in LLM-based hiring decisions: Evidence from comparative CV/résumé evaluations. *PeerJ Computer Science*, 11, e3628. https://doi.org/10.7717/peerj-cs.3628
 
