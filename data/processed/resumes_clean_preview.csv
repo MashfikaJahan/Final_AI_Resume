@@ -1,0 +1,1001 @@
+Resume_ID,Job Role,Skills,Experience (Years),Education,Recruiter Decision,AI Score (0-100),sentiment_score,sentiment_label
+1,AI Researcher,"TensorFlow, NLP, Pytorch",10,B.Sc,Hire,100.0,0.0,neutral
+2,Data Scientist,"Deep Learning, Machine Learning, Python, SQL",10,MBA,Hire,100.0,0.0,neutral
+3,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Linux",1,MBA,Hire,70.0,0.38636000000000004,positive
+4,AI Researcher,"Python, Pytorch, TensorFlow",7,B.Tech,Hire,95.0,0.0,neutral
+5,Software Engineer,"SQL, React, Java",4,PhD,Hire,100.0,0.0,neutral
+6,Cybersecurity Analyst,"Cybersecurity, Networking, Linux, Ethical Hacking",10,B.Tech,Hire,100.0,0.38636000000000004,positive
+7,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking",4,M.Tech,Hire,100.0,0.38636000000000004,positive
+8,AI Researcher,"TensorFlow, Pytorch, NLP",3,M.Tech,Hire,90.0,0.0,neutral
+9,Cybersecurity Analyst,"Networking, Ethical Hacking",7,MBA,Hire,100.0,0.38636000000000004,positive
+10,AI Researcher,"Python, TensorFlow, Pytorch, NLP",0,M.Tech,Reject,35.0,0.0,neutral
+11,Software Engineer,"SQL, Java, C++",1,PhD,Hire,70.0,0.0,neutral
+12,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking",0,MBA,Reject,50.0,0.38636000000000004,positive
+13,Cybersecurity Analyst,"Cybersecurity, Networking",0,M.Tech,Hire,65.0,0.0,neutral
+14,Software Engineer,"SQL, C++, Java",4,B.Sc,Hire,100.0,0.0,neutral
+15,AI Researcher,"Pytorch, NLP",0,M.Tech,Reject,45.0,0.0,neutral
+16,Cybersecurity Analyst,"Cybersecurity, Networking",1,PhD,Reject,60.0,0.0,neutral
+17,Data Scientist,"SQL, Python",10,PhD,Hire,100.0,0.0,neutral
+18,Cybersecurity Analyst,"Linux, Networking, Cybersecurity, Ethical Hacking",3,B.Tech,Hire,80.0,0.38636000000000004,positive
+19,Data Scientist,"SQL, Python, Deep Learning",3,MBA,Hire,95.0,0.0,neutral
+20,Data Scientist,"Machine Learning, SQL, Python",10,B.Tech,Hire,100.0,0.0,neutral
+21,Software Engineer,"SQL, Java, C++, React",5,B.Sc,Hire,90.0,0.0,neutral
+22,AI Researcher,"Python, TensorFlow, Pytorch, NLP",6,B.Sc,Hire,100.0,0.0,neutral
+23,Data Scientist,"Machine Learning, Deep Learning, SQL",4,MBA,Hire,100.0,0.0,neutral
+24,AI Researcher,"TensorFlow, Pytorch, NLP, Python",8,MBA,Hire,100.0,0.0,neutral
+25,AI Researcher,"Pytorch, TensorFlow, NLP, Python",0,B.Tech,Hire,80.0,0.0,neutral
+26,AI Researcher,"Python, NLP",7,B.Tech,Hire,100.0,0.0,neutral
+27,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity",3,B.Sc,Reject,60.0,0.38636000000000004,positive
+28,AI Researcher,"Pytorch, NLP",1,M.Tech,Reject,45.0,0.0,neutral
+29,AI Researcher,"NLP, Pytorch, Python",10,B.Tech,Hire,100.0,0.0,neutral
+30,Data Scientist,"SQL, Python",10,B.Tech,Hire,100.0,0.0,neutral
+31,Data Scientist,"Python, SQL",4,PhD,Hire,100.0,0.0,neutral
+32,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",1,B.Sc,Hire,75.0,0.38636000000000004,positive
+33,Data Scientist,"Deep Learning, Machine Learning, SQL, Python",8,M.Tech,Hire,100.0,0.0,neutral
+34,AI Researcher,"TensorFlow, Python, Pytorch",9,B.Sc,Hire,100.0,0.0,neutral
+35,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking",0,M.Tech,Hire,75.0,0.38636000000000004,positive
+36,AI Researcher,"NLP, Pytorch",7,PhD,Hire,100.0,0.0,neutral
+37,AI Researcher,"Python, NLP",7,M.Tech,Hire,100.0,0.0,neutral
+38,Software Engineer,"C++, SQL, Java",5,B.Tech,Hire,100.0,0.0,neutral
+39,Cybersecurity Analyst,"Linux, Cybersecurity",7,PhD,Hire,80.0,0.0,neutral
+40,Data Scientist,"SQL, Python",1,MBA,Hire,70.0,0.0,neutral
+41,Software Engineer,"C++, React",10,MBA,Hire,100.0,0.0,neutral
+42,Cybersecurity Analyst,"Networking, Linux",1,M.Tech,Hire,80.0,0.0,neutral
+43,AI Researcher,"NLP, TensorFlow, Python",3,M.Tech,Hire,95.0,0.0,neutral
+44,Data Scientist,"Machine Learning, Python",1,MBA,Hire,70.0,0.0,neutral
+45,Data Scientist,"SQL, Python, Machine Learning",4,M.Tech,Hire,95.0,0.0,neutral
+46,Software Engineer,"SQL, Java",5,B.Sc,Hire,90.0,0.0,neutral
+47,Software Engineer,"SQL, Java, C++, React",4,MBA,Hire,100.0,0.0,neutral
+48,Data Scientist,"Python, Machine Learning",8,PhD,Hire,100.0,0.0,neutral
+49,Software Engineer,"React, SQL, Java",1,MBA,Hire,80.0,0.0,neutral
+50,AI Researcher,"Pytorch, Python",5,B.Tech,Hire,75.0,0.0,neutral
+51,AI Researcher,"Python, NLP, TensorFlow, Pytorch",5,PhD,Hire,100.0,0.0,neutral
+52,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Linux",9,M.Tech,Hire,100.0,0.38636000000000004,positive
+53,Data Scientist,"SQL, Deep Learning, Machine Learning",1,MBA,Reject,45.0,0.0,neutral
+54,Data Scientist,"Python, SQL, Machine Learning",9,B.Sc,Hire,100.0,0.0,neutral
+55,Data Scientist,"Python, SQL, Machine Learning",0,B.Tech,Reject,60.0,0.0,neutral
+56,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking",1,B.Sc,Reject,55.0,0.38636000000000004,positive
+57,Software Engineer,"C++, Java, SQL, React",3,B.Sc,Hire,75.0,0.0,neutral
+58,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",1,B.Sc,Reject,55.0,0.38636000000000004,positive
+59,AI Researcher,"TensorFlow, Pytorch",2,B.Sc,Reject,35.0,0.0,neutral
+60,Software Engineer,"Java, React",6,PhD,Hire,100.0,0.0,neutral
+61,AI Researcher,"Python, Pytorch",0,B.Tech,Hire,70.0,0.0,neutral
+62,Data Scientist,"SQL, Deep Learning, Machine Learning, Python",8,B.Sc,Hire,100.0,0.0,neutral
+63,Data Scientist,"Machine Learning, Deep Learning, Python",9,M.Tech,Hire,100.0,0.0,neutral
+64,Software Engineer,"C++, React, Java, SQL",9,M.Tech,Hire,100.0,0.0,neutral
+65,Data Scientist,"Deep Learning, Python, Machine Learning, SQL",10,MBA,Hire,100.0,0.0,neutral
+66,Software Engineer,"Java, React, C++",1,PhD,Reject,40.0,0.0,neutral
+67,Software Engineer,"Java, C++, React, SQL",8,B.Sc,Hire,100.0,0.0,neutral
+68,AI Researcher,"Pytorch, Python, TensorFlow, NLP",9,M.Tech,Hire,100.0,0.0,neutral
+69,Cybersecurity Analyst,"Linux, Networking, Ethical Hacking, Cybersecurity",9,M.Tech,Hire,100.0,0.38636000000000004,positive
+70,Data Scientist,"SQL, Python, Machine Learning, Deep Learning",1,B.Tech,Reject,45.0,0.0,neutral
+71,AI Researcher,"Pytorch, TensorFlow, NLP",8,PhD,Hire,100.0,0.0,neutral
+72,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",0,MBA,Reject,60.0,0.38636000000000004,positive
+73,Data Scientist,"Python, SQL, Machine Learning, Deep Learning",0,M.Tech,Reject,60.0,0.0,neutral
+74,Software Engineer,"Java, SQL",5,MBA,Hire,100.0,0.0,neutral
+75,AI Researcher,"TensorFlow, NLP",9,B.Sc,Hire,100.0,0.0,neutral
+76,Software Engineer,"Java, React, SQL, C++",4,B.Tech,Hire,100.0,0.0,neutral
+77,Data Scientist,"Python, Machine Learning",0,M.Tech,Reject,20.0,0.0,neutral
+78,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux, Networking",7,PhD,Hire,95.0,0.38636000000000004,positive
+79,AI Researcher,"TensorFlow, Python",1,MBA,Reject,50.0,0.0,neutral
+80,Data Scientist,"Deep Learning, Python, Machine Learning, SQL",6,B.Sc,Hire,100.0,0.0,neutral
+81,AI Researcher,"NLP, TensorFlow, Pytorch",7,MBA,Hire,100.0,0.0,neutral
+82,Software Engineer,"React, C++",1,PhD,Hire,80.0,0.0,neutral
+83,Software Engineer,"C++, Java",9,M.Tech,Hire,100.0,0.0,neutral
+84,AI Researcher,"Python, NLP, TensorFlow",10,B.Tech,Hire,100.0,0.0,neutral
+85,Software Engineer,"Java, SQL, C++",0,B.Sc,Reject,35.0,0.0,neutral
+86,Software Engineer,"Java, React, C++",8,M.Tech,Hire,100.0,0.0,neutral
+87,Data Scientist,"SQL, Deep Learning, Python, Machine Learning",6,M.Tech,Hire,100.0,0.0,neutral
+88,AI Researcher,"Python, Pytorch",7,B.Sc,Hire,100.0,0.0,neutral
+89,Software Engineer,"React, SQL, Java",5,PhD,Hire,100.0,0.0,neutral
+90,Cybersecurity Analyst,"Linux, Ethical Hacking, Cybersecurity, Networking",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+91,AI Researcher,"NLP, TensorFlow",4,MBA,Hire,95.0,0.0,neutral
+92,AI Researcher,"Pytorch, TensorFlow, Python",4,MBA,Hire,95.0,0.0,neutral
+93,AI Researcher,"TensorFlow, NLP, Pytorch",5,B.Sc,Hire,75.0,0.0,neutral
+94,AI Researcher,"NLP, Pytorch",0,B.Sc,Hire,70.0,0.0,neutral
+95,Software Engineer,"Java, SQL, C++",9,B.Tech,Hire,100.0,0.0,neutral
+96,AI Researcher,"TensorFlow, Pytorch, Python, NLP",1,B.Sc,Reject,60.0,0.0,neutral
+97,AI Researcher,"TensorFlow, NLP, Pytorch, Python",4,PhD,Hire,80.0,0.0,neutral
+98,AI Researcher,"TensorFlow, Pytorch, NLP, Python",6,B.Tech,Hire,100.0,0.0,neutral
+99,Data Scientist,"Python, Deep Learning",6,PhD,Hire,100.0,0.0,neutral
+100,Software Engineer,"SQL, Java, React",6,B.Sc,Hire,100.0,0.0,neutral
+101,Cybersecurity Analyst,"Linux, Cybersecurity",1,M.Tech,Reject,45.0,0.0,neutral
+102,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity",8,B.Tech,Hire,100.0,0.38636000000000004,positive
+103,Cybersecurity Analyst,"Ethical Hacking, Networking",2,MBA,Reject,55.0,0.38636000000000004,positive
+104,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",8,PhD,Hire,100.0,0.38636000000000004,positive
+105,Software Engineer,"Java, SQL",5,B.Tech,Hire,75.0,0.0,neutral
+106,Data Scientist,"Deep Learning, Machine Learning, SQL",7,B.Tech,Hire,100.0,0.0,neutral
+107,AI Researcher,"NLP, Python, TensorFlow",9,B.Tech,Hire,100.0,0.0,neutral
+108,Data Scientist,"Python, Deep Learning, Machine Learning",2,B.Tech,Reject,55.0,0.0,neutral
+109,Data Scientist,"Python, Machine Learning, SQL",4,B.Tech,Hire,85.0,0.0,neutral
+110,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking, Cybersecurity",7,MBA,Hire,100.0,0.38636000000000004,positive
+111,Software Engineer,"Java, React",9,B.Tech,Hire,100.0,0.0,neutral
+112,Data Scientist,"Machine Learning, SQL, Deep Learning",5,B.Tech,Hire,95.0,0.0,neutral
+113,Data Scientist,"SQL, Python, Machine Learning, Deep Learning",3,MBA,Hire,65.0,0.0,neutral
+114,AI Researcher,"Pytorch, TensorFlow",0,B.Sc,Reject,35.0,0.0,neutral
+115,Software Engineer,"C++, Java",2,MBA,Reject,50.0,0.0,neutral
+116,AI Researcher,"NLP, TensorFlow, Pytorch",9,PhD,Hire,100.0,0.0,neutral
+117,Cybersecurity Analyst,"Networking, Cybersecurity, Linux, Ethical Hacking",10,B.Tech,Hire,100.0,0.38636000000000004,positive
+118,Software Engineer,"React, C++, Java",5,PhD,Hire,100.0,0.0,neutral
+119,Software Engineer,"React, Java, SQL",4,MBA,Hire,100.0,0.0,neutral
+120,Software Engineer,"React, C++, Java, SQL",5,MBA,Hire,100.0,0.0,neutral
+121,Software Engineer,"Java, React",6,B.Sc,Hire,80.0,0.0,neutral
+122,AI Researcher,"Python, TensorFlow, Pytorch, NLP",4,B.Sc,Hire,80.0,0.0,neutral
+123,Cybersecurity Analyst,"Linux, Networking, Cybersecurity, Ethical Hacking",7,PhD,Hire,100.0,0.38636000000000004,positive
+124,Software Engineer,"SQL, Java",1,PhD,Hire,75.0,0.0,neutral
+125,Software Engineer,"Java, C++, React",6,MBA,Hire,100.0,0.0,neutral
+126,Data Scientist,"SQL, Python",9,B.Sc,Hire,100.0,0.0,neutral
+127,Data Scientist,"Machine Learning, Python, Deep Learning, SQL",5,M.Tech,Hire,100.0,0.0,neutral
+128,AI Researcher,"Pytorch, Python",3,MBA,Reject,50.0,0.0,neutral
+129,Cybersecurity Analyst,"Linux, Networking, Ethical Hacking, Cybersecurity",8,B.Sc,Hire,100.0,0.38636000000000004,positive
+130,AI Researcher,"Python, NLP, Pytorch",3,B.Sc,Reject,55.0,0.0,neutral
+131,AI Researcher,"NLP, Python, Pytorch, TensorFlow",1,B.Sc,Reject,60.0,0.0,neutral
+132,Software Engineer,"Java, C++, SQL",0,B.Sc,Reject,30.0,0.0,neutral
+133,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux, Cybersecurity",8,B.Sc,Hire,100.0,0.38636000000000004,positive
+134,Software Engineer,"C++, Java, React, SQL",1,PhD,Reject,30.0,0.0,neutral
+135,AI Researcher,"TensorFlow, NLP, Python, Pytorch",6,B.Sc,Hire,100.0,0.0,neutral
+136,Cybersecurity Analyst,"Networking, Cybersecurity",7,B.Sc,Hire,80.0,0.0,neutral
+137,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",4,M.Tech,Hire,80.0,0.38636000000000004,positive
+138,Data Scientist,"Machine Learning, Python, SQL",10,M.Tech,Hire,100.0,0.0,neutral
+139,Data Scientist,"Deep Learning, SQL, Python, Machine Learning",4,M.Tech,Hire,95.0,0.0,neutral
+140,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Networking, Linux",3,MBA,Hire,65.0,0.38636000000000004,positive
+141,Data Scientist,"Deep Learning, Python, SQL",3,B.Sc,Hire,65.0,0.0,neutral
+142,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux",9,B.Tech,Hire,100.0,0.38636000000000004,positive
+143,Data Scientist,"SQL, Machine Learning, Deep Learning, Python",5,B.Tech,Hire,85.0,0.0,neutral
+144,Cybersecurity Analyst,"Networking, Linux, Cybersecurity, Ethical Hacking",10,MBA,Hire,100.0,0.38636000000000004,positive
+145,AI Researcher,"TensorFlow, Pytorch, Python",5,B.Tech,Hire,100.0,0.0,neutral
+146,AI Researcher,"TensorFlow, Pytorch, NLP",10,M.Tech,Hire,100.0,0.0,neutral
+147,Data Scientist,"SQL, Python, Deep Learning, Machine Learning",10,PhD,Hire,100.0,0.0,neutral
+148,Data Scientist,"Python, Machine Learning",8,PhD,Hire,100.0,0.0,neutral
+149,AI Researcher,"TensorFlow, NLP, Pytorch",6,B.Tech,Hire,85.0,0.0,neutral
+150,Data Scientist,"Python, Machine Learning",9,B.Sc,Hire,100.0,0.0,neutral
+151,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",3,B.Tech,Hire,90.0,0.38636000000000004,positive
+152,Software Engineer,"SQL, React, Java",6,PhD,Hire,100.0,0.0,neutral
+153,Data Scientist,"Python, Machine Learning, SQL, Deep Learning",7,PhD,Hire,100.0,0.0,neutral
+154,Data Scientist,"Python, Deep Learning, SQL, Machine Learning",7,B.Tech,Hire,100.0,0.0,neutral
+155,Cybersecurity Analyst,"Ethical Hacking, Linux, Cybersecurity",5,MBA,Hire,100.0,0.38636000000000004,positive
+156,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",6,M.Tech,Hire,90.0,0.38636000000000004,positive
+157,Cybersecurity Analyst,"Linux, Ethical Hacking, Networking, Cybersecurity",6,B.Sc,Hire,100.0,0.38636000000000004,positive
+158,AI Researcher,"Pytorch, TensorFlow, Python",2,PhD,Reject,40.0,0.0,neutral
+159,Cybersecurity Analyst,"Ethical Hacking, Linux",6,B.Sc,Hire,100.0,0.38636000000000004,positive
+160,Cybersecurity Analyst,"Cybersecurity, Linux",2,MBA,Reject,45.0,0.0,neutral
+161,Data Scientist,"SQL, Machine Learning",3,PhD,Hire,95.0,0.0,neutral
+162,Data Scientist,"SQL, Machine Learning",5,M.Tech,Hire,100.0,0.0,neutral
+163,Cybersecurity Analyst,"Linux, Cybersecurity",5,M.Tech,Hire,100.0,0.0,neutral
+164,AI Researcher,"TensorFlow, NLP, Python",1,M.Tech,Reject,35.0,0.0,neutral
+165,Cybersecurity Analyst,"Networking, Cybersecurity, Linux, Ethical Hacking",7,M.Tech,Hire,100.0,0.38636000000000004,positive
+166,Data Scientist,"Deep Learning, SQL",2,PhD,Reject,45.0,0.0,neutral
+167,AI Researcher,"Pytorch, NLP, Python",3,M.Tech,Hire,85.0,0.0,neutral
+168,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking",2,B.Sc,Hire,80.0,0.38636000000000004,positive
+169,Software Engineer,"Java, C++, React, SQL",9,B.Sc,Hire,100.0,0.0,neutral
+170,Data Scientist,"Python, Machine Learning",7,M.Tech,Hire,80.0,0.0,neutral
+171,Cybersecurity Analyst,"Networking, Ethical Hacking, Cybersecurity",8,MBA,Hire,100.0,0.38636000000000004,positive
+172,Data Scientist,"Deep Learning, SQL, Python",3,B.Sc,Hire,85.0,0.0,neutral
+173,Software Engineer,"React, SQL, C++",3,B.Tech,Hire,80.0,0.0,neutral
+174,Data Scientist,"SQL, Python",9,PhD,Hire,100.0,0.0,neutral
+175,Data Scientist,"Machine Learning, Deep Learning, Python, SQL",6,MBA,Hire,100.0,0.0,neutral
+176,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",9,B.Sc,Hire,100.0,0.0,neutral
+177,Software Engineer,"C++, React",1,MBA,Reject,35.0,0.0,neutral
+178,Data Scientist,"SQL, Deep Learning, Python, Machine Learning",8,B.Sc,Hire,100.0,0.0,neutral
+179,AI Researcher,"Pytorch, TensorFlow",3,MBA,Hire,75.0,0.0,neutral
+180,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking",8,MBA,Hire,100.0,0.38636000000000004,positive
+181,Software Engineer,"Java, React",6,PhD,Hire,100.0,0.0,neutral
+182,Data Scientist,"Machine Learning, Deep Learning, SQL, Python",1,PhD,Hire,65.0,0.0,neutral
+183,AI Researcher,"Pytorch, NLP",0,B.Sc,Reject,45.0,0.0,neutral
+184,Data Scientist,"SQL, Deep Learning, Python",5,PhD,Hire,80.0,0.0,neutral
+185,Software Engineer,"React, Java, C++, SQL",7,M.Tech,Hire,100.0,0.0,neutral
+186,Software Engineer,"Java, C++, React, SQL",5,MBA,Hire,100.0,0.0,neutral
+187,AI Researcher,"Pytorch, Python",0,B.Sc,Reject,55.0,0.0,neutral
+188,AI Researcher,"NLP, TensorFlow, Python",0,MBA,Reject,40.0,0.0,neutral
+189,Data Scientist,"SQL, Python, Machine Learning, Deep Learning",3,M.Tech,Hire,85.0,0.0,neutral
+190,Software Engineer,"React, SQL, Java, C++",1,PhD,Hire,65.0,0.0,neutral
+191,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",8,B.Sc,Hire,100.0,0.38636000000000004,positive
+192,Cybersecurity Analyst,"Linux, Ethical Hacking",1,PhD,Reject,45.0,0.38636000000000004,positive
+193,AI Researcher,"TensorFlow, NLP, Python",3,MBA,Hire,100.0,0.0,neutral
+194,Data Scientist,"Machine Learning, SQL, Python",10,PhD,Hire,100.0,0.0,neutral
+195,AI Researcher,"Pytorch, Python, TensorFlow, NLP",9,B.Sc,Hire,100.0,0.0,neutral
+196,AI Researcher,"Pytorch, Python",7,B.Tech,Hire,100.0,0.0,neutral
+197,Data Scientist,"Python, Deep Learning",8,PhD,Hire,100.0,0.0,neutral
+198,Software Engineer,"C++, SQL, Java",1,PhD,Hire,70.0,0.0,neutral
+199,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Linux",3,M.Tech,Reject,55.0,0.38636000000000004,positive
+200,AI Researcher,"Python, TensorFlow",1,B.Sc,Reject,50.0,0.0,neutral
+201,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux, Networking",8,MBA,Hire,100.0,0.38636000000000004,positive
+202,AI Researcher,"TensorFlow, NLP",6,PhD,Hire,85.0,0.0,neutral
+203,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Networking",8,B.Tech,Hire,95.0,0.38636000000000004,positive
+204,AI Researcher,"NLP, Python, TensorFlow",1,PhD,Hire,70.0,0.0,neutral
+205,Software Engineer,"Java, C++",9,MBA,Hire,100.0,0.0,neutral
+206,AI Researcher,"NLP, Pytorch, Python, TensorFlow",10,B.Sc,Hire,100.0,0.0,neutral
+207,Cybersecurity Analyst,"Ethical Hacking, Linux, Cybersecurity, Networking",7,MBA,Hire,100.0,0.38636000000000004,positive
+208,Software Engineer,"C++, React",2,B.Sc,Hire,65.0,0.0,neutral
+209,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",1,M.Tech,Hire,70.0,0.38636000000000004,positive
+210,AI Researcher,"Python, NLP, TensorFlow",2,M.Tech,Hire,65.0,0.0,neutral
+211,Data Scientist,"Machine Learning, Python, Deep Learning",3,B.Tech,Hire,75.0,0.0,neutral
+212,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+213,Software Engineer,"C++, SQL",2,MBA,Reject,45.0,0.0,neutral
+214,Software Engineer,"SQL, Java",1,B.Tech,Hire,65.0,0.0,neutral
+215,AI Researcher,"TensorFlow, Python, NLP",3,B.Tech,Reject,60.0,0.0,neutral
+216,Cybersecurity Analyst,"Linux, Ethical Hacking, Cybersecurity, Networking",8,M.Tech,Hire,100.0,0.38636000000000004,positive
+217,Data Scientist,"SQL, Deep Learning, Python, Machine Learning",7,B.Sc,Hire,100.0,0.0,neutral
+218,AI Researcher,"TensorFlow, Python, NLP, Pytorch",8,MBA,Hire,100.0,0.0,neutral
+219,Cybersecurity Analyst,"Linux, Networking, Cybersecurity, Ethical Hacking",1,B.Sc,Hire,80.0,0.38636000000000004,positive
+220,AI Researcher,"Pytorch, TensorFlow, Python, NLP",10,PhD,Hire,100.0,0.0,neutral
+221,Cybersecurity Analyst,"Cybersecurity, Linux",9,PhD,Hire,100.0,0.0,neutral
+222,AI Researcher,"Python, NLP",1,M.Tech,Reject,35.0,0.0,neutral
+223,AI Researcher,"Python, TensorFlow, Pytorch, NLP",6,B.Sc,Hire,100.0,0.0,neutral
+224,Software Engineer,"Java, SQL",8,M.Tech,Hire,100.0,0.0,neutral
+225,Cybersecurity Analyst,"Linux, Ethical Hacking, Cybersecurity",4,PhD,Hire,70.0,0.38636000000000004,positive
+226,Cybersecurity Analyst,"Cybersecurity, Networking",1,B.Tech,Reject,60.0,0.0,neutral
+227,Data Scientist,"Python, Deep Learning, Machine Learning",2,B.Tech,Hire,65.0,0.0,neutral
+228,Cybersecurity Analyst,"Linux, Networking, Ethical Hacking",7,B.Sc,Hire,100.0,0.38636000000000004,positive
+229,AI Researcher,"Python, Pytorch",3,PhD,Hire,90.0,0.0,neutral
+230,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking",2,M.Tech,Hire,95.0,0.38636000000000004,positive
+231,AI Researcher,"Python, NLP, Pytorch",1,MBA,Reject,40.0,0.0,neutral
+232,Software Engineer,"React, C++, Java, SQL",0,M.Tech,Hire,70.0,0.0,neutral
+233,Data Scientist,"Deep Learning, Python",3,MBA,Hire,70.0,0.0,neutral
+234,Software Engineer,"SQL, Java, C++, React",9,M.Tech,Hire,100.0,0.0,neutral
+235,Cybersecurity Analyst,"Cybersecurity, Linux, Networking",0,MBA,Reject,60.0,0.0,neutral
+236,Software Engineer,"React, SQL",7,B.Tech,Hire,90.0,0.0,neutral
+237,Cybersecurity Analyst,"Ethical Hacking, Linux, Cybersecurity, Networking",1,B.Tech,Hire,80.0,0.38636000000000004,positive
+238,Data Scientist,"Python, Deep Learning",5,B.Tech,Hire,75.0,0.0,neutral
+239,AI Researcher,"Python, TensorFlow, NLP, Pytorch",8,PhD,Hire,100.0,0.0,neutral
+240,Data Scientist,"Deep Learning, SQL",1,M.Tech,Reject,50.0,0.0,neutral
+241,Cybersecurity Analyst,"Linux, Ethical Hacking",10,MBA,Hire,100.0,0.38636000000000004,positive
+242,Data Scientist,"Deep Learning, Machine Learning, Python, SQL",5,B.Tech,Hire,100.0,0.0,neutral
+243,Software Engineer,"C++, SQL, React",8,B.Tech,Hire,100.0,0.0,neutral
+244,Cybersecurity Analyst,"Linux, Networking",0,B.Tech,Reject,50.0,0.0,neutral
+245,AI Researcher,"NLP, Pytorch",2,B.Sc,Hire,80.0,0.0,neutral
+246,Data Scientist,"Deep Learning, Python, SQL",2,B.Sc,Hire,85.0,0.0,neutral
+247,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux",7,MBA,Hire,100.0,0.38636000000000004,positive
+248,Data Scientist,"Deep Learning, Machine Learning, SQL",5,B.Sc,Hire,95.0,0.0,neutral
+249,Software Engineer,"SQL, Java, React, C++",4,MBA,Hire,95.0,0.0,neutral
+250,Software Engineer,"React, Java",2,MBA,Hire,80.0,0.0,neutral
+251,AI Researcher,"Python, NLP, TensorFlow, Pytorch",9,B.Tech,Hire,100.0,0.0,neutral
+252,AI Researcher,"Pytorch, NLP, TensorFlow, Python",7,M.Tech,Hire,100.0,0.0,neutral
+253,AI Researcher,"TensorFlow, Python, Pytorch",8,PhD,Hire,100.0,0.0,neutral
+254,Data Scientist,"SQL, Machine Learning",2,B.Tech,Reject,40.0,0.0,neutral
+255,Software Engineer,"React, C++, SQL, Java",7,MBA,Hire,100.0,0.0,neutral
+256,AI Researcher,"NLP, Pytorch, TensorFlow",6,B.Tech,Hire,100.0,0.0,neutral
+257,Software Engineer,"Java, C++, React",9,M.Tech,Hire,100.0,0.0,neutral
+258,Cybersecurity Analyst,"Cybersecurity, Linux",8,B.Sc,Hire,100.0,0.0,neutral
+259,Data Scientist,"SQL, Machine Learning, Deep Learning",0,B.Tech,Reject,35.0,0.0,neutral
+260,AI Researcher,"TensorFlow, Pytorch, Python",8,B.Tech,Hire,100.0,0.0,neutral
+261,AI Researcher,"Python, Pytorch",7,B.Sc,Hire,100.0,0.0,neutral
+262,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking",1,PhD,Hire,85.0,0.38636000000000004,positive
+263,AI Researcher,"TensorFlow, NLP",10,B.Sc,Hire,100.0,0.0,neutral
+264,AI Researcher,"Python, TensorFlow",0,M.Tech,Reject,25.0,0.0,neutral
+265,AI Researcher,"NLP, Python, Pytorch",1,MBA,Reject,35.0,0.0,neutral
+266,AI Researcher,"NLP, TensorFlow",7,MBA,Hire,95.0,0.0,neutral
+267,Cybersecurity Analyst,"Networking, Ethical Hacking",0,M.Tech,Reject,45.0,0.38636000000000004,positive
+268,Software Engineer,"SQL, React",10,B.Tech,Hire,100.0,0.0,neutral
+269,Data Scientist,"SQL, Machine Learning, Deep Learning, Python",8,M.Tech,Hire,100.0,0.0,neutral
+270,Cybersecurity Analyst,"Cybersecurity, Linux, Networking, Ethical Hacking",9,PhD,Hire,100.0,0.38636000000000004,positive
+271,Data Scientist,"Machine Learning, SQL, Python",0,PhD,Reject,60.0,0.0,neutral
+272,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity",0,B.Sc,Reject,50.0,0.38636000000000004,positive
+273,Cybersecurity Analyst,"Linux, Cybersecurity",2,PhD,Reject,45.0,0.0,neutral
+274,AI Researcher,"NLP, Pytorch, Python",8,MBA,Hire,100.0,0.0,neutral
+275,Cybersecurity Analyst,"Networking, Linux",3,M.Tech,Hire,85.0,0.0,neutral
+276,AI Researcher,"NLP, TensorFlow",7,PhD,Hire,90.0,0.0,neutral
+277,Data Scientist,"Deep Learning, Machine Learning, Python",3,MBA,Reject,60.0,0.0,neutral
+278,Software Engineer,"React, C++, SQL, Java",4,B.Tech,Hire,100.0,0.0,neutral
+279,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking",6,M.Tech,Hire,100.0,0.38636000000000004,positive
+280,Data Scientist,"Deep Learning, Machine Learning",0,PhD,Reject,25.0,0.0,neutral
+281,Software Engineer,"C++, SQL, React",10,M.Tech,Hire,100.0,0.0,neutral
+282,AI Researcher,"Python, TensorFlow, Pytorch, NLP",9,MBA,Hire,100.0,0.0,neutral
+283,AI Researcher,"Pytorch, Python, NLP, TensorFlow",0,M.Tech,Hire,75.0,0.0,neutral
+284,AI Researcher,"Python, TensorFlow",3,B.Sc,Reject,55.0,0.0,neutral
+285,Data Scientist,"Python, Deep Learning",7,B.Tech,Hire,90.0,0.0,neutral
+286,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Networking",2,PhD,Hire,70.0,0.38636000000000004,positive
+287,Software Engineer,"C++, React, SQL, Java",2,MBA,Reject,45.0,0.0,neutral
+288,Data Scientist,"Python, SQL, Deep Learning",10,B.Tech,Hire,100.0,0.0,neutral
+289,Data Scientist,"Python, Deep Learning, SQL, Machine Learning",2,M.Tech,Hire,75.0,0.0,neutral
+290,Cybersecurity Analyst,"Ethical Hacking, Networking",6,MBA,Hire,100.0,0.38636000000000004,positive
+291,AI Researcher,"TensorFlow, Python",2,PhD,Hire,85.0,0.0,neutral
+292,Cybersecurity Analyst,"Cybersecurity, Networking, Linux",2,B.Sc,Reject,60.0,0.0,neutral
+293,Data Scientist,"Machine Learning, Python, SQL",6,B.Tech,Hire,100.0,0.0,neutral
+294,Software Engineer,"Java, C++, React, SQL",4,B.Sc,Hire,100.0,0.0,neutral
+295,AI Researcher,"Pytorch, Python, NLP, TensorFlow",9,MBA,Hire,100.0,0.0,neutral
+296,Data Scientist,"Deep Learning, Python, Machine Learning, SQL",2,B.Sc,Hire,70.0,0.0,neutral
+297,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking, Cybersecurity",2,B.Sc,Reject,60.0,0.38636000000000004,positive
+298,Cybersecurity Analyst,"Networking, Cybersecurity, Linux, Ethical Hacking",8,MBA,Hire,100.0,0.38636000000000004,positive
+299,Data Scientist,"SQL, Deep Learning",6,B.Tech,Hire,100.0,0.0,neutral
+300,AI Researcher,"Python, Pytorch, TensorFlow",1,M.Tech,Hire,75.0,0.0,neutral
+301,Cybersecurity Analyst,"Linux, Ethical Hacking",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+302,Software Engineer,"React, Java, SQL, C++",5,PhD,Hire,100.0,0.0,neutral
+303,AI Researcher,"NLP, Python, TensorFlow, Pytorch",2,PhD,Hire,100.0,0.0,neutral
+304,AI Researcher,"Python, NLP",8,B.Sc,Hire,100.0,0.0,neutral
+305,Data Scientist,"SQL, Python, Machine Learning",6,B.Sc,Hire,100.0,0.0,neutral
+306,Software Engineer,"React, SQL, C++",1,MBA,Hire,75.0,0.0,neutral
+307,Data Scientist,"Machine Learning, SQL, Python",4,B.Sc,Hire,100.0,0.0,neutral
+308,Data Scientist,"Python, SQL",1,MBA,Hire,65.0,0.0,neutral
+309,Data Scientist,"Deep Learning, SQL",6,B.Tech,Hire,80.0,0.0,neutral
+310,Software Engineer,"SQL, Java",3,B.Tech,Hire,80.0,0.0,neutral
+311,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking",0,B.Tech,Reject,50.0,0.38636000000000004,positive
+312,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",6,B.Sc,Hire,100.0,0.0,neutral
+313,Data Scientist,"Deep Learning, SQL, Python, Machine Learning",1,PhD,Reject,45.0,0.0,neutral
+314,Software Engineer,"C++, SQL",5,M.Tech,Hire,95.0,0.0,neutral
+315,Cybersecurity Analyst,"Networking, Ethical Hacking, Linux, Cybersecurity",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+316,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux",1,MBA,Hire,85.0,0.38636000000000004,positive
+317,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking, Linux",2,B.Sc,Reject,60.0,0.38636000000000004,positive
+318,Data Scientist,"Machine Learning, Python, Deep Learning",2,B.Tech,Hire,80.0,0.0,neutral
+319,AI Researcher,"TensorFlow, Python, NLP",9,M.Tech,Hire,100.0,0.0,neutral
+320,Software Engineer,"SQL, Java, C++, React",0,B.Tech,Hire,70.0,0.0,neutral
+321,Data Scientist,"Deep Learning, SQL",5,MBA,Hire,100.0,0.0,neutral
+322,Cybersecurity Analyst,"Networking, Linux, Cybersecurity, Ethical Hacking",5,M.Tech,Hire,95.0,0.38636000000000004,positive
+323,Data Scientist,"Python, Deep Learning",5,B.Tech,Hire,100.0,0.0,neutral
+324,Cybersecurity Analyst,"Ethical Hacking, Linux",8,B.Tech,Hire,100.0,0.38636000000000004,positive
+325,Software Engineer,"C++, Java, SQL",3,PhD,Hire,75.0,0.0,neutral
+326,Data Scientist,"Deep Learning, Python",3,MBA,Hire,100.0,0.0,neutral
+327,Data Scientist,"Machine Learning, Python, Deep Learning",9,B.Tech,Hire,100.0,0.0,neutral
+328,Cybersecurity Analyst,"Ethical Hacking, Linux, Cybersecurity",4,MBA,Hire,100.0,0.38636000000000004,positive
+329,Software Engineer,"SQL, React, C++",7,B.Tech,Hire,95.0,0.0,neutral
+330,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",0,PhD,Reject,55.0,0.38636000000000004,positive
+331,Software Engineer,"SQL, Java",7,M.Tech,Hire,100.0,0.0,neutral
+332,Data Scientist,"Python, Deep Learning, SQL, Machine Learning",1,B.Tech,Hire,85.0,0.0,neutral
+333,AI Researcher,"TensorFlow, Pytorch",5,PhD,Hire,90.0,0.0,neutral
+334,Cybersecurity Analyst,"Linux, Cybersecurity, Networking",2,B.Sc,Reject,50.0,0.0,neutral
+335,Cybersecurity Analyst,"Ethical Hacking, Linux",7,M.Tech,Hire,90.0,0.38636000000000004,positive
+336,Software Engineer,"Java, SQL, React, C++",10,B.Sc,Hire,100.0,0.0,neutral
+337,AI Researcher,"Pytorch, TensorFlow",2,MBA,Hire,70.0,0.0,neutral
+338,Software Engineer,"C++, SQL",7,MBA,Hire,100.0,0.0,neutral
+339,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking, Cybersecurity",4,B.Tech,Reject,60.0,0.38636000000000004,positive
+340,Data Scientist,"SQL, Machine Learning",0,B.Tech,Reject,60.0,0.0,neutral
+341,Software Engineer,"C++, Java",0,B.Sc,Reject,50.0,0.0,neutral
+342,Data Scientist,"Deep Learning, SQL, Python, Machine Learning",8,MBA,Hire,100.0,0.0,neutral
+343,AI Researcher,"Python, NLP, TensorFlow",7,B.Sc,Hire,100.0,0.0,neutral
+344,Cybersecurity Analyst,"Cybersecurity, Networking",3,MBA,Hire,85.0,0.0,neutral
+345,Data Scientist,"Deep Learning, Machine Learning, SQL, Python",1,M.Tech,Hire,90.0,0.0,neutral
+346,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",6,MBA,Hire,100.0,0.38636000000000004,positive
+347,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Linux, Networking",0,MBA,Hire,65.0,0.38636000000000004,positive
+348,Software Engineer,"SQL, Java, React",3,B.Sc,Hire,90.0,0.0,neutral
+349,Data Scientist,"Machine Learning, Python",1,MBA,Reject,45.0,0.0,neutral
+350,Cybersecurity Analyst,"Ethical Hacking, Linux",2,M.Tech,Hire,65.0,0.38636000000000004,positive
+351,Cybersecurity Analyst,"Networking, Ethical Hacking",1,M.Tech,Reject,60.0,0.38636000000000004,positive
+352,Software Engineer,"React, C++, SQL, Java",0,M.Tech,Reject,20.0,0.0,neutral
+353,Data Scientist,"Python, Deep Learning, SQL, Machine Learning",9,PhD,Hire,100.0,0.0,neutral
+354,Data Scientist,"Python, Machine Learning, Deep Learning",0,B.Tech,Reject,40.0,0.0,neutral
+355,AI Researcher,"Pytorch, TensorFlow",8,B.Sc,Hire,100.0,0.0,neutral
+356,AI Researcher,"Python, Pytorch, TensorFlow, NLP",7,B.Sc,Hire,100.0,0.0,neutral
+357,AI Researcher,"Python, NLP",0,PhD,Hire,70.0,0.0,neutral
+358,Software Engineer,"SQL, C++, React, Java",4,MBA,Hire,100.0,0.0,neutral
+359,Data Scientist,"SQL, Deep Learning, Machine Learning",6,M.Tech,Hire,85.0,0.0,neutral
+360,Cybersecurity Analyst,"Networking, Ethical Hacking",0,B.Tech,Reject,30.0,0.38636000000000004,positive
+361,Cybersecurity Analyst,"Linux, Ethical Hacking",2,M.Tech,Reject,60.0,0.38636000000000004,positive
+362,Cybersecurity Analyst,"Networking, Linux, Cybersecurity, Ethical Hacking",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+363,Software Engineer,"SQL, Java",3,B.Sc,Hire,70.0,0.0,neutral
+364,AI Researcher,"TensorFlow, Python, NLP, Pytorch",1,B.Sc,Reject,45.0,0.0,neutral
+365,Software Engineer,"React, Java, SQL",4,M.Tech,Hire,90.0,0.0,neutral
+366,AI Researcher,"TensorFlow, Pytorch",5,M.Tech,Hire,100.0,0.0,neutral
+367,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",2,B.Sc,Reject,45.0,0.38636000000000004,positive
+368,AI Researcher,"Python, NLP",5,B.Tech,Hire,100.0,0.0,neutral
+369,Data Scientist,"Deep Learning, Python",6,MBA,Hire,100.0,0.0,neutral
+370,Cybersecurity Analyst,"Linux, Networking, Ethical Hacking",10,B.Tech,Hire,100.0,0.38636000000000004,positive
+371,Software Engineer,"Java, C++, React",7,PhD,Hire,100.0,0.0,neutral
+372,Software Engineer,"React, Java, SQL",3,B.Sc,Reject,45.0,0.0,neutral
+373,AI Researcher,"NLP, Pytorch, Python",4,PhD,Hire,100.0,0.0,neutral
+374,Software Engineer,"Java, SQL, C++, React",10,M.Tech,Hire,100.0,0.0,neutral
+375,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",3,B.Sc,Hire,80.0,0.38636000000000004,positive
+376,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",1,M.Tech,Reject,45.0,0.38636000000000004,positive
+377,Software Engineer,"C++, React",8,B.Sc,Hire,100.0,0.0,neutral
+378,Data Scientist,"Python, Machine Learning, Deep Learning",0,B.Sc,Hire,75.0,0.0,neutral
+379,Data Scientist,"SQL, Python",8,B.Sc,Hire,100.0,0.0,neutral
+380,Data Scientist,"SQL, Python, Deep Learning, Machine Learning",2,B.Tech,Hire,100.0,0.0,neutral
+381,AI Researcher,"Pytorch, NLP, Python, TensorFlow",10,M.Tech,Hire,100.0,0.0,neutral
+382,AI Researcher,"NLP, TensorFlow, Pytorch",3,M.Tech,Hire,85.0,0.0,neutral
+383,AI Researcher,"Pytorch, TensorFlow, NLP",8,B.Tech,Hire,100.0,0.0,neutral
+384,AI Researcher,"TensorFlow, Python, NLP, Pytorch",4,B.Tech,Hire,80.0,0.0,neutral
+385,Software Engineer,"React, C++",6,B.Tech,Hire,100.0,0.0,neutral
+386,Cybersecurity Analyst,"Linux, Ethical Hacking, Networking",10,B.Sc,Hire,100.0,0.38636000000000004,positive
+387,AI Researcher,"NLP, Pytorch, TensorFlow",1,B.Tech,Reject,40.0,0.0,neutral
+388,Software Engineer,"C++, SQL, Java",10,M.Tech,Hire,100.0,0.0,neutral
+389,AI Researcher,"Pytorch, NLP, Python",10,MBA,Hire,100.0,0.0,neutral
+390,Data Scientist,"Deep Learning, Python, SQL, Machine Learning",1,PhD,Reject,55.0,0.0,neutral
+391,AI Researcher,"NLP, TensorFlow",8,MBA,Hire,95.0,0.0,neutral
+392,AI Researcher,"NLP, Python",9,M.Tech,Hire,100.0,0.0,neutral
+393,Software Engineer,"C++, React, Java",9,B.Tech,Hire,100.0,0.0,neutral
+394,Data Scientist,"Python, Machine Learning, SQL",6,PhD,Hire,80.0,0.0,neutral
+395,AI Researcher,"Python, Pytorch, TensorFlow, NLP",8,B.Tech,Hire,100.0,0.0,neutral
+396,Software Engineer,"Java, SQL",3,B.Tech,Reject,55.0,0.0,neutral
+397,Data Scientist,"Machine Learning, Deep Learning, SQL, Python",3,M.Tech,Reject,60.0,0.0,neutral
+398,Cybersecurity Analyst,"Ethical Hacking, Linux",1,PhD,Hire,65.0,0.38636000000000004,positive
+399,Data Scientist,"Machine Learning, Python, Deep Learning",1,MBA,Reject,55.0,0.0,neutral
+400,AI Researcher,"Pytorch, NLP, Python, TensorFlow",5,B.Tech,Hire,100.0,0.0,neutral
+401,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",5,MBA,Hire,100.0,0.38636000000000004,positive
+402,Cybersecurity Analyst,"Cybersecurity, Networking, Linux, Ethical Hacking",6,B.Sc,Hire,100.0,0.38636000000000004,positive
+403,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking, Cybersecurity",10,B.Tech,Hire,100.0,0.38636000000000004,positive
+404,Data Scientist,"Python, Machine Learning, Deep Learning",0,M.Tech,Reject,55.0,0.0,neutral
+405,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",3,MBA,Hire,90.0,0.38636000000000004,positive
+406,Software Engineer,"React, SQL, Java",1,B.Sc,Hire,80.0,0.0,neutral
+407,AI Researcher,"NLP, Pytorch, TensorFlow",8,MBA,Hire,100.0,0.0,neutral
+408,AI Researcher,"TensorFlow, NLP, Python",4,MBA,Hire,95.0,0.0,neutral
+409,Cybersecurity Analyst,"Networking, Linux",3,MBA,Hire,70.0,0.0,neutral
+410,Data Scientist,"Python, SQL",0,PhD,Hire,65.0,0.0,neutral
+411,Data Scientist,"Deep Learning, SQL",5,MBA,Hire,70.0,0.0,neutral
+412,Cybersecurity Analyst,"Cybersecurity, Networking",4,PhD,Reject,50.0,0.0,neutral
+413,Software Engineer,"C++, Java, React",4,MBA,Hire,65.0,0.0,neutral
+414,AI Researcher,"Pytorch, TensorFlow, NLP",1,MBA,Hire,80.0,0.0,neutral
+415,Software Engineer,"React, C++",5,B.Sc,Hire,75.0,0.0,neutral
+416,Software Engineer,"Java, React, C++, SQL",7,PhD,Hire,100.0,0.0,neutral
+417,Data Scientist,"Deep Learning, SQL, Machine Learning, Python",1,MBA,Reject,60.0,0.0,neutral
+418,Data Scientist,"Deep Learning, Machine Learning, Python, SQL",5,B.Tech,Hire,70.0,0.0,neutral
+419,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",2,MBA,Hire,80.0,0.0,neutral
+420,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux",1,B.Tech,Hire,70.0,0.38636000000000004,positive
+421,Cybersecurity Analyst,"Linux, Networking, Cybersecurity",6,MBA,Hire,80.0,0.0,neutral
+422,Data Scientist,"Python, Deep Learning",2,B.Tech,Hire,65.0,0.0,neutral
+423,AI Researcher,"NLP, TensorFlow, Pytorch, Python",8,B.Sc,Hire,100.0,0.0,neutral
+424,Software Engineer,"C++, React, Java, SQL",7,B.Tech,Hire,100.0,0.0,neutral
+425,Software Engineer,"SQL, C++",3,B.Tech,Hire,70.0,0.0,neutral
+426,AI Researcher,"Python, NLP, Pytorch, TensorFlow",4,B.Sc,Hire,100.0,0.0,neutral
+427,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",7,MBA,Hire,100.0,0.38636000000000004,positive
+428,Software Engineer,"React, Java",5,PhD,Hire,100.0,0.0,neutral
+429,Cybersecurity Analyst,"Networking, Linux",5,M.Tech,Hire,100.0,0.0,neutral
+430,Data Scientist,"SQL, Python, Machine Learning",10,PhD,Hire,100.0,0.0,neutral
+431,AI Researcher,"Pytorch, NLP",4,B.Tech,Hire,100.0,0.0,neutral
+432,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking",2,B.Tech,Hire,65.0,0.38636000000000004,positive
+433,Software Engineer,"SQL, C++, React",7,M.Tech,Hire,100.0,0.0,neutral
+434,Software Engineer,"SQL, React, C++, Java",3,PhD,Hire,100.0,0.0,neutral
+435,Cybersecurity Analyst,"Networking, Cybersecurity, Linux, Ethical Hacking",5,B.Sc,Hire,100.0,0.38636000000000004,positive
+436,Data Scientist,"Python, Deep Learning, SQL",7,M.Tech,Hire,100.0,0.0,neutral
+437,Software Engineer,"Java, React, C++",0,PhD,Reject,35.0,0.0,neutral
+438,Data Scientist,"Python, Deep Learning, Machine Learning, SQL",3,PhD,Hire,100.0,0.0,neutral
+439,Software Engineer,"Java, React",9,B.Tech,Hire,100.0,0.0,neutral
+440,Software Engineer,"C++, SQL",6,MBA,Hire,95.0,0.0,neutral
+441,Data Scientist,"Deep Learning, Python, Machine Learning",9,MBA,Hire,100.0,0.0,neutral
+442,Cybersecurity Analyst,"Networking, Cybersecurity",5,MBA,Hire,90.0,0.0,neutral
+443,Data Scientist,"Machine Learning, SQL, Deep Learning",7,MBA,Hire,100.0,0.0,neutral
+444,Software Engineer,"Java, C++, SQL, React",4,B.Tech,Hire,95.0,0.0,neutral
+445,Software Engineer,"Java, React, SQL",4,PhD,Hire,65.0,0.0,neutral
+446,Software Engineer,"Java, React",10,B.Sc,Hire,100.0,0.0,neutral
+447,AI Researcher,"TensorFlow, Python, NLP",10,MBA,Hire,100.0,0.0,neutral
+448,Data Scientist,"Machine Learning, Python",8,B.Sc,Hire,100.0,0.0,neutral
+449,Software Engineer,"React, SQL, Java",6,B.Tech,Hire,100.0,0.0,neutral
+450,Software Engineer,"SQL, React, Java",0,M.Tech,Reject,15.0,0.0,neutral
+451,Cybersecurity Analyst,"Networking, Ethical Hacking, Cybersecurity",10,B.Sc,Hire,100.0,0.38636000000000004,positive
+452,Data Scientist,"Python, Machine Learning, Deep Learning",8,B.Sc,Hire,100.0,0.0,neutral
+453,Software Engineer,"Java, SQL, React",5,MBA,Hire,100.0,0.0,neutral
+454,Software Engineer,"Java, React, C++, SQL",3,B.Sc,Hire,100.0,0.0,neutral
+455,Software Engineer,"SQL, Java",8,B.Tech,Hire,100.0,0.0,neutral
+456,AI Researcher,"NLP, TensorFlow, Python, Pytorch",0,M.Tech,Hire,70.0,0.0,neutral
+457,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux, Networking",6,MBA,Hire,100.0,0.38636000000000004,positive
+458,Cybersecurity Analyst,"Linux, Networking",6,PhD,Hire,100.0,0.0,neutral
+459,Software Engineer,"Java, C++",4,B.Tech,Hire,100.0,0.0,neutral
+460,AI Researcher,"TensorFlow, Python, NLP",6,B.Tech,Hire,100.0,0.0,neutral
+461,AI Researcher,"NLP, Pytorch, TensorFlow",9,MBA,Hire,100.0,0.0,neutral
+462,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",1,M.Tech,Hire,65.0,0.38636000000000004,positive
+463,AI Researcher,"Pytorch, Python",8,B.Sc,Hire,100.0,0.0,neutral
+464,Software Engineer,"C++, Java",0,M.Tech,Reject,35.0,0.0,neutral
+465,Cybersecurity Analyst,"Ethical Hacking, Networking",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+466,AI Researcher,"TensorFlow, Pytorch, Python, NLP",4,MBA,Hire,80.0,0.0,neutral
+467,AI Researcher,"Pytorch, Python, TensorFlow, NLP",5,B.Sc,Hire,100.0,0.0,neutral
+468,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",3,PhD,Hire,75.0,0.38636000000000004,positive
+469,Software Engineer,"C++, Java, SQL",2,MBA,Hire,80.0,0.0,neutral
+470,AI Researcher,"Pytorch, Python",4,B.Sc,Hire,100.0,0.0,neutral
+471,AI Researcher,"Python, TensorFlow, Pytorch, NLP",8,PhD,Hire,100.0,0.0,neutral
+472,Data Scientist,"SQL, Deep Learning, Machine Learning, Python",1,PhD,Reject,60.0,0.0,neutral
+473,AI Researcher,"TensorFlow, NLP, Python",0,MBA,Reject,35.0,0.0,neutral
+474,Data Scientist,"SQL, Machine Learning, Deep Learning",9,B.Tech,Hire,100.0,0.0,neutral
+475,Data Scientist,"Machine Learning, SQL, Python, Deep Learning",2,MBA,Hire,80.0,0.0,neutral
+476,Data Scientist,"Python, Machine Learning",10,MBA,Hire,100.0,0.0,neutral
+477,Data Scientist,"Deep Learning, Machine Learning, SQL",1,B.Tech,Reject,55.0,0.0,neutral
+478,Data Scientist,"SQL, Python",8,MBA,Hire,100.0,0.0,neutral
+479,Cybersecurity Analyst,"Networking, Ethical Hacking, Linux, Cybersecurity",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+480,Data Scientist,"SQL, Machine Learning",1,B.Sc,Reject,35.0,0.0,neutral
+481,Data Scientist,"Machine Learning, Python, SQL",0,MBA,Reject,50.0,0.0,neutral
+482,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking, Networking",2,B.Tech,Hire,100.0,0.38636000000000004,positive
+483,Software Engineer,"React, C++, Java",10,MBA,Hire,100.0,0.0,neutral
+484,Cybersecurity Analyst,"Networking, Cybersecurity, Linux",5,M.Tech,Hire,100.0,0.0,neutral
+485,Software Engineer,"C++, Java, React, SQL",10,MBA,Hire,100.0,0.0,neutral
+486,Cybersecurity Analyst,"Ethical Hacking, Networking",8,B.Sc,Hire,95.0,0.38636000000000004,positive
+487,Cybersecurity Analyst,"Ethical Hacking, Linux",6,B.Tech,Hire,90.0,0.38636000000000004,positive
+488,AI Researcher,"TensorFlow, Python, NLP",10,MBA,Hire,100.0,0.0,neutral
+489,Software Engineer,"C++, React, SQL, Java",1,M.Tech,Hire,85.0,0.0,neutral
+490,Data Scientist,"SQL, Machine Learning, Deep Learning, Python",3,PhD,Hire,95.0,0.0,neutral
+491,AI Researcher,"Python, Pytorch, NLP",0,PhD,Hire,70.0,0.0,neutral
+492,Software Engineer,"C++, React, Java",10,B.Sc,Hire,100.0,0.0,neutral
+493,Data Scientist,"Deep Learning, Machine Learning, SQL",2,PhD,Hire,95.0,0.0,neutral
+494,Data Scientist,"Machine Learning, Python, SQL",6,B.Tech,Hire,100.0,0.0,neutral
+495,Software Engineer,"React, SQL, Java, C++",6,B.Tech,Hire,90.0,0.0,neutral
+496,Data Scientist,"Machine Learning, Deep Learning, Python",3,B.Sc,Hire,100.0,0.0,neutral
+497,Cybersecurity Analyst,"Linux, Ethical Hacking, Cybersecurity, Networking",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+498,Software Engineer,"Java, SQL",8,M.Tech,Hire,100.0,0.0,neutral
+499,Software Engineer,"Java, React, SQL, C++",8,M.Tech,Hire,100.0,0.0,neutral
+500,Software Engineer,"Java, SQL, C++, React",3,B.Tech,Reject,60.0,0.0,neutral
+501,AI Researcher,"NLP, TensorFlow, Python, Pytorch",9,PhD,Hire,100.0,0.0,neutral
+502,AI Researcher,"Pytorch, TensorFlow, NLP, Python",5,MBA,Hire,80.0,0.0,neutral
+503,Data Scientist,"SQL, Deep Learning, Python, Machine Learning",7,B.Tech,Hire,100.0,0.0,neutral
+504,Cybersecurity Analyst,"Linux, Networking",4,M.Tech,Reject,50.0,0.0,neutral
+505,Software Engineer,"SQL, C++, React",1,M.Tech,Reject,55.0,0.0,neutral
+506,Cybersecurity Analyst,"Networking, Ethical Hacking",0,PhD,Reject,45.0,0.38636000000000004,positive
+507,AI Researcher,"TensorFlow, Python, NLP",7,B.Sc,Hire,100.0,0.0,neutral
+508,Data Scientist,"Machine Learning, Python",5,B.Tech,Hire,90.0,0.0,neutral
+509,AI Researcher,"Pytorch, TensorFlow",9,PhD,Hire,100.0,0.0,neutral
+510,Cybersecurity Analyst,"Ethical Hacking, Linux",7,PhD,Hire,80.0,0.38636000000000004,positive
+511,Cybersecurity Analyst,"Networking, Ethical Hacking, Linux, Cybersecurity",9,B.Tech,Hire,100.0,0.38636000000000004,positive
+512,Cybersecurity Analyst,"Networking, Ethical Hacking, Cybersecurity, Linux",9,MBA,Hire,100.0,0.38636000000000004,positive
+513,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",1,B.Tech,Hire,80.0,0.38636000000000004,positive
+514,Cybersecurity Analyst,"Cybersecurity, Linux, Networking, Ethical Hacking",0,M.Tech,Reject,50.0,0.38636000000000004,positive
+515,Software Engineer,"Java, React, SQL, C++",1,B.Sc,Hire,80.0,0.0,neutral
+516,Software Engineer,"React, C++",9,B.Sc,Hire,100.0,0.0,neutral
+517,Software Engineer,"SQL, React, Java, C++",9,MBA,Hire,100.0,0.0,neutral
+518,Cybersecurity Analyst,"Ethical Hacking, Linux",4,B.Sc,Hire,85.0,0.38636000000000004,positive
+519,Software Engineer,"SQL, Java, C++",2,B.Sc,Reject,50.0,0.0,neutral
+520,Software Engineer,"C++, React, SQL",9,PhD,Hire,100.0,0.0,neutral
+521,AI Researcher,"Python, NLP, Pytorch",2,PhD,Reject,50.0,0.0,neutral
+522,AI Researcher,"NLP, Pytorch, TensorFlow",9,B.Sc,Hire,100.0,0.0,neutral
+523,Cybersecurity Analyst,"Linux, Networking, Cybersecurity, Ethical Hacking",8,B.Tech,Hire,100.0,0.38636000000000004,positive
+524,Data Scientist,"Machine Learning, Deep Learning, SQL",0,B.Sc,Reject,55.0,0.0,neutral
+525,Software Engineer,"SQL, C++",7,B.Sc,Hire,100.0,0.0,neutral
+526,Cybersecurity Analyst,"Networking, Cybersecurity",7,PhD,Hire,80.0,0.0,neutral
+527,Software Engineer,"Java, React, SQL",1,PhD,Reject,30.0,0.0,neutral
+528,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux",0,B.Tech,Hire,70.0,0.38636000000000004,positive
+529,Data Scientist,"SQL, Machine Learning, Deep Learning, Python",6,M.Tech,Hire,100.0,0.0,neutral
+530,AI Researcher,"TensorFlow, NLP, Pytorch, Python",4,M.Tech,Hire,100.0,0.0,neutral
+531,Data Scientist,"Deep Learning, Machine Learning, SQL",5,M.Tech,Hire,100.0,0.0,neutral
+532,Data Scientist,"Python, Machine Learning",7,B.Sc,Hire,100.0,0.0,neutral
+533,Software Engineer,"C++, SQL",5,M.Tech,Hire,70.0,0.0,neutral
+534,Data Scientist,"Python, Deep Learning, SQL, Machine Learning",5,MBA,Hire,80.0,0.0,neutral
+535,Cybersecurity Analyst,"Networking, Linux",2,B.Sc,Reject,30.0,0.0,neutral
+536,Software Engineer,"React, SQL",4,PhD,Hire,100.0,0.0,neutral
+537,Software Engineer,"Java, React, C++, SQL",8,B.Tech,Hire,100.0,0.0,neutral
+538,AI Researcher,"Pytorch, TensorFlow, NLP",4,B.Sc,Hire,80.0,0.0,neutral
+539,Software Engineer,"Java, C++, SQL",9,M.Tech,Hire,100.0,0.0,neutral
+540,AI Researcher,"TensorFlow, Pytorch, NLP, Python",6,PhD,Hire,100.0,0.0,neutral
+541,Software Engineer,"SQL, Java, C++, React",5,M.Tech,Hire,100.0,0.0,neutral
+542,Data Scientist,"Deep Learning, Python, Machine Learning",6,B.Tech,Hire,95.0,0.0,neutral
+543,Software Engineer,"SQL, C++, React",3,B.Tech,Hire,80.0,0.0,neutral
+544,Cybersecurity Analyst,"Ethical Hacking, Networking",6,B.Sc,Hire,90.0,0.38636000000000004,positive
+545,Data Scientist,"Machine Learning, Deep Learning",7,B.Tech,Hire,100.0,0.0,neutral
+546,Software Engineer,"SQL, Java, React",10,B.Sc,Hire,100.0,0.0,neutral
+547,AI Researcher,"Pytorch, NLP",1,MBA,Reject,30.0,0.0,neutral
+548,Data Scientist,"Machine Learning, Deep Learning, SQL",7,M.Tech,Hire,100.0,0.0,neutral
+549,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking, Cybersecurity",3,M.Tech,Hire,100.0,0.38636000000000004,positive
+550,AI Researcher,"TensorFlow, NLP, Python",3,PhD,Hire,90.0,0.0,neutral
+551,Data Scientist,"Python, Deep Learning, Machine Learning, SQL",9,B.Tech,Hire,100.0,0.0,neutral
+552,Software Engineer,"React, C++, Java, SQL",5,B.Sc,Hire,85.0,0.0,neutral
+553,AI Researcher,"Python, TensorFlow, Pytorch, NLP",5,PhD,Hire,80.0,0.0,neutral
+554,Software Engineer,"React, C++, Java, SQL",7,M.Tech,Hire,100.0,0.0,neutral
+555,Data Scientist,"Machine Learning, Python, Deep Learning, SQL",1,B.Sc,Reject,60.0,0.0,neutral
+556,Software Engineer,"React, SQL, Java, C++",1,PhD,Reject,35.0,0.0,neutral
+557,Cybersecurity Analyst,"Ethical Hacking, Networking, Cybersecurity",10,MBA,Hire,100.0,0.38636000000000004,positive
+558,Data Scientist,"Machine Learning, Deep Learning, Python",7,B.Tech,Hire,95.0,0.0,neutral
+559,Cybersecurity Analyst,"Cybersecurity, Linux, Networking, Ethical Hacking",0,MBA,Hire,70.0,0.38636000000000004,positive
+560,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking",1,PhD,Reject,55.0,0.38636000000000004,positive
+561,AI Researcher,"NLP, Python",5,B.Tech,Hire,85.0,0.0,neutral
+562,AI Researcher,"TensorFlow, Python",10,PhD,Hire,100.0,0.0,neutral
+563,AI Researcher,"NLP, Pytorch, Python",0,MBA,Reject,15.0,0.0,neutral
+564,Software Engineer,"React, Java, C++",6,B.Sc,Hire,100.0,0.0,neutral
+565,Cybersecurity Analyst,"Networking, Linux",10,PhD,Hire,100.0,0.0,neutral
+566,Data Scientist,"SQL, Deep Learning",5,B.Sc,Hire,95.0,0.0,neutral
+567,Software Engineer,"C++, Java, React, SQL",9,MBA,Hire,100.0,0.0,neutral
+568,Software Engineer,"React, Java",3,M.Tech,Hire,95.0,0.0,neutral
+569,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",8,PhD,Hire,100.0,0.38636000000000004,positive
+570,Software Engineer,"C++, SQL",2,M.Tech,Reject,60.0,0.0,neutral
+571,AI Researcher,"TensorFlow, Python, NLP, Pytorch",9,MBA,Hire,100.0,0.0,neutral
+572,Data Scientist,"Machine Learning, Python, Deep Learning",7,B.Tech,Hire,100.0,0.0,neutral
+573,Software Engineer,"C++, React",4,B.Sc,Hire,100.0,0.0,neutral
+574,AI Researcher,"Python, TensorFlow, Pytorch",1,B.Sc,Hire,70.0,0.0,neutral
+575,Cybersecurity Analyst,"Ethical Hacking, Networking",6,M.Tech,Hire,100.0,0.38636000000000004,positive
+576,Data Scientist,"Python, Machine Learning",5,B.Sc,Hire,65.0,0.0,neutral
+577,Software Engineer,"React, Java, SQL, C++",8,B.Sc,Hire,100.0,0.0,neutral
+578,Software Engineer,"React, C++, Java",8,MBA,Hire,100.0,0.0,neutral
+579,Software Engineer,"SQL, Java, React, C++",3,M.Tech,Hire,100.0,0.0,neutral
+580,Data Scientist,"Deep Learning, SQL",1,B.Tech,Reject,50.0,0.0,neutral
+581,Data Scientist,"Python, Machine Learning, SQL",0,B.Tech,Reject,45.0,0.0,neutral
+582,Software Engineer,"React, Java",5,B.Sc,Hire,100.0,0.0,neutral
+583,Software Engineer,"C++, Java",5,PhD,Hire,100.0,0.0,neutral
+584,AI Researcher,"TensorFlow, Python",5,B.Sc,Hire,90.0,0.0,neutral
+585,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Linux",6,MBA,Hire,90.0,0.38636000000000004,positive
+586,AI Researcher,"TensorFlow, Python",1,M.Tech,Reject,50.0,0.0,neutral
+587,Data Scientist,"Python, SQL, Machine Learning",9,MBA,Hire,100.0,0.0,neutral
+588,Cybersecurity Analyst,"Linux, Networking, Ethical Hacking",3,B.Tech,Hire,70.0,0.38636000000000004,positive
+589,Software Engineer,"C++, React",10,M.Tech,Hire,100.0,0.0,neutral
+590,Cybersecurity Analyst,"Linux, Ethical Hacking",3,M.Tech,Reject,60.0,0.38636000000000004,positive
+591,Software Engineer,"SQL, React, Java",2,MBA,Reject,50.0,0.0,neutral
+592,Data Scientist,"Machine Learning, Python, SQL, Deep Learning",9,M.Tech,Hire,100.0,0.0,neutral
+593,Data Scientist,"Deep Learning, SQL, Machine Learning, Python",3,PhD,Hire,65.0,0.0,neutral
+594,AI Researcher,"Pytorch, TensorFlow, NLP",6,MBA,Hire,100.0,0.0,neutral
+595,AI Researcher,"Pytorch, Python, TensorFlow",7,B.Sc,Hire,100.0,0.0,neutral
+596,AI Researcher,"Pytorch, NLP, Python",10,M.Tech,Hire,100.0,0.0,neutral
+597,Data Scientist,"Python, Machine Learning",8,B.Tech,Hire,100.0,0.0,neutral
+598,Data Scientist,"Machine Learning, Python, Deep Learning",3,M.Tech,Hire,80.0,0.0,neutral
+599,AI Researcher,"NLP, Python, TensorFlow",7,B.Sc,Hire,100.0,0.0,neutral
+600,AI Researcher,"NLP, Pytorch, TensorFlow",7,B.Tech,Hire,100.0,0.0,neutral
+601,Software Engineer,"C++, React, SQL, Java",9,B.Tech,Hire,100.0,0.0,neutral
+602,AI Researcher,"NLP, TensorFlow, Pytorch, Python",0,B.Sc,Reject,35.0,0.0,neutral
+603,Software Engineer,"SQL, Java",5,B.Sc,Hire,70.0,0.0,neutral
+604,Software Engineer,"React, SQL",10,MBA,Hire,100.0,0.0,neutral
+605,Data Scientist,"Python, Deep Learning, Machine Learning",5,M.Tech,Hire,100.0,0.0,neutral
+606,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking, Linux",5,B.Tech,Hire,95.0,0.38636000000000004,positive
+607,AI Researcher,"Pytorch, TensorFlow, NLP",4,B.Tech,Hire,70.0,0.0,neutral
+608,Software Engineer,"C++, React, SQL, Java",5,M.Tech,Hire,100.0,0.0,neutral
+609,AI Researcher,"NLP, TensorFlow, Python, Pytorch",8,MBA,Hire,100.0,0.0,neutral
+610,Cybersecurity Analyst,"Linux, Ethical Hacking, Cybersecurity, Networking",8,M.Tech,Hire,100.0,0.38636000000000004,positive
+611,Software Engineer,"Java, React, C++, SQL",5,MBA,Hire,85.0,0.0,neutral
+612,Software Engineer,"Java, SQL",3,PhD,Hire,100.0,0.0,neutral
+613,AI Researcher,"NLP, Pytorch",8,B.Sc,Hire,100.0,0.0,neutral
+614,Software Engineer,"Java, C++, SQL, React",7,B.Sc,Hire,100.0,0.0,neutral
+615,AI Researcher,"Pytorch, Python, TensorFlow",4,MBA,Hire,65.0,0.0,neutral
+616,Cybersecurity Analyst,"Networking, Ethical Hacking, Linux",3,M.Tech,Hire,85.0,0.38636000000000004,positive
+617,AI Researcher,"TensorFlow, Python, Pytorch, NLP",2,B.Sc,Hire,70.0,0.0,neutral
+618,Software Engineer,"SQL, React, C++, Java",8,M.Tech,Hire,100.0,0.0,neutral
+619,AI Researcher,"TensorFlow, NLP, Python, Pytorch",6,M.Tech,Hire,100.0,0.0,neutral
+620,Data Scientist,"Deep Learning, SQL, Machine Learning",6,MBA,Hire,100.0,0.0,neutral
+621,AI Researcher,"TensorFlow, NLP, Python, Pytorch",4,M.Tech,Hire,100.0,0.0,neutral
+622,AI Researcher,"Python, TensorFlow, NLP",10,M.Tech,Hire,100.0,0.0,neutral
+623,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",2,B.Sc,Hire,65.0,0.38636000000000004,positive
+624,AI Researcher,"Pytorch, NLP",5,M.Tech,Hire,90.0,0.0,neutral
+625,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux, Networking",5,B.Tech,Hire,100.0,0.38636000000000004,positive
+626,Data Scientist,"Python, Deep Learning, SQL",4,MBA,Hire,95.0,0.0,neutral
+627,Software Engineer,"SQL, C++",0,B.Tech,Reject,45.0,0.0,neutral
+628,AI Researcher,"Python, TensorFlow, Pytorch",0,M.Tech,Reject,20.0,0.0,neutral
+629,Data Scientist,"SQL, Deep Learning",3,B.Tech,Hire,75.0,0.0,neutral
+630,AI Researcher,"TensorFlow, NLP, Python, Pytorch",3,B.Sc,Hire,90.0,0.0,neutral
+631,Cybersecurity Analyst,"Cybersecurity, Networking",4,PhD,Reject,60.0,0.0,neutral
+632,Cybersecurity Analyst,"Linux, Ethical Hacking, Cybersecurity",8,PhD,Hire,100.0,0.38636000000000004,positive
+633,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux, Cybersecurity",1,B.Sc,Hire,85.0,0.38636000000000004,positive
+634,AI Researcher,"TensorFlow, Pytorch, Python, NLP",10,B.Tech,Hire,100.0,0.0,neutral
+635,Software Engineer,"C++, React",7,PhD,Hire,85.0,0.0,neutral
+636,Software Engineer,"React, SQL, Java",0,B.Tech,Reject,40.0,0.0,neutral
+637,AI Researcher,"Pytorch, TensorFlow, Python",6,B.Tech,Hire,100.0,0.0,neutral
+638,AI Researcher,"TensorFlow, NLP, Pytorch",3,B.Sc,Hire,100.0,0.0,neutral
+639,AI Researcher,"TensorFlow, NLP",7,M.Tech,Hire,100.0,0.0,neutral
+640,Data Scientist,"SQL, Machine Learning",5,B.Sc,Hire,100.0,0.0,neutral
+641,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking, Cybersecurity",3,PhD,Hire,70.0,0.38636000000000004,positive
+642,Cybersecurity Analyst,"Networking, Cybersecurity",1,PhD,Hire,65.0,0.0,neutral
+643,Cybersecurity Analyst,"Ethical Hacking, Networking",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+644,Cybersecurity Analyst,"Networking, Ethical Hacking",3,B.Sc,Reject,50.0,0.38636000000000004,positive
+645,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking, Linux",9,PhD,Hire,100.0,0.38636000000000004,positive
+646,AI Researcher,"NLP, TensorFlow, Pytorch",3,M.Tech,Hire,95.0,0.0,neutral
+647,Software Engineer,"SQL, Java",0,B.Sc,Reject,50.0,0.0,neutral
+648,AI Researcher,"Pytorch, Python, TensorFlow",0,PhD,Reject,55.0,0.0,neutral
+649,Data Scientist,"Machine Learning, Python",3,B.Tech,Reject,60.0,0.0,neutral
+650,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+651,AI Researcher,"Python, Pytorch, NLP, TensorFlow",4,PhD,Hire,100.0,0.0,neutral
+652,AI Researcher,"Pytorch, TensorFlow",3,B.Tech,Hire,95.0,0.0,neutral
+653,Software Engineer,"SQL, Java",1,M.Tech,Reject,20.0,0.0,neutral
+654,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",4,B.Tech,Hire,90.0,0.38636000000000004,positive
+655,Cybersecurity Analyst,"Ethical Hacking, Networking",9,B.Sc,Hire,100.0,0.38636000000000004,positive
+656,Software Engineer,"C++, SQL, React, Java",6,PhD,Hire,100.0,0.0,neutral
+657,Data Scientist,"Deep Learning, Machine Learning, Python, SQL",10,PhD,Hire,100.0,0.0,neutral
+658,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking, Cybersecurity",0,MBA,Reject,30.0,0.38636000000000004,positive
+659,AI Researcher,"NLP, TensorFlow, Python",3,B.Tech,Hire,100.0,0.0,neutral
+660,AI Researcher,"Pytorch, NLP, Python",2,B.Tech,Reject,60.0,0.0,neutral
+661,Software Engineer,"Java, SQL",8,M.Tech,Hire,100.0,0.0,neutral
+662,Cybersecurity Analyst,"Linux, Cybersecurity",2,PhD,Hire,65.0,0.0,neutral
+663,Data Scientist,"Deep Learning, Python, SQL, Machine Learning",0,PhD,Reject,30.0,0.0,neutral
+664,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking",6,M.Tech,Hire,100.0,0.38636000000000004,positive
+665,AI Researcher,"Python, NLP, Pytorch, TensorFlow",8,B.Tech,Hire,100.0,0.0,neutral
+666,Software Engineer,"C++, Java, SQL, React",10,PhD,Hire,100.0,0.0,neutral
+667,Software Engineer,"React, Java",3,B.Sc,Reject,40.0,0.0,neutral
+668,AI Researcher,"Python, Pytorch",5,MBA,Hire,100.0,0.0,neutral
+669,AI Researcher,"Python, Pytorch, NLP, TensorFlow",3,PhD,Hire,100.0,0.0,neutral
+670,Data Scientist,"Deep Learning, Python, SQL",2,PhD,Reject,60.0,0.0,neutral
+671,AI Researcher,"Python, NLP, Pytorch, TensorFlow",0,B.Sc,Reject,45.0,0.0,neutral
+672,AI Researcher,"Python, TensorFlow, NLP, Pytorch",5,M.Tech,Hire,100.0,0.0,neutral
+673,Software Engineer,"C++, React",9,MBA,Hire,100.0,0.0,neutral
+674,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking, Cybersecurity",0,B.Tech,Reject,55.0,0.38636000000000004,positive
+675,Data Scientist,"SQL, Python",10,PhD,Hire,100.0,0.0,neutral
+676,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux, Cybersecurity",0,B.Tech,Hire,70.0,0.38636000000000004,positive
+677,Data Scientist,"SQL, Machine Learning, Deep Learning",4,B.Sc,Reject,60.0,0.0,neutral
+678,Software Engineer,"SQL, Java, React, C++",5,M.Tech,Hire,100.0,0.0,neutral
+679,Software Engineer,"React, SQL, C++",6,M.Tech,Hire,100.0,0.0,neutral
+680,Data Scientist,"Machine Learning, Python, Deep Learning, SQL",8,B.Sc,Hire,100.0,0.0,neutral
+681,Cybersecurity Analyst,"Networking, Ethical Hacking",2,PhD,Hire,75.0,0.38636000000000004,positive
+682,AI Researcher,"Python, TensorFlow, Pytorch, NLP",3,PhD,Hire,90.0,0.0,neutral
+683,Cybersecurity Analyst,"Linux, Cybersecurity",0,MBA,Reject,60.0,0.0,neutral
+684,Software Engineer,"Java, C++",3,PhD,Hire,85.0,0.0,neutral
+685,Software Engineer,"React, Java",5,MBA,Hire,95.0,0.0,neutral
+686,AI Researcher,"TensorFlow, NLP",2,MBA,Hire,80.0,0.0,neutral
+687,Software Engineer,"SQL, Java, C++, React",6,B.Sc,Hire,100.0,0.0,neutral
+688,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+689,AI Researcher,"Pytorch, TensorFlow, Python, NLP",4,B.Sc,Hire,95.0,0.0,neutral
+690,AI Researcher,"Python, TensorFlow",3,B.Sc,Hire,65.0,0.0,neutral
+691,Software Engineer,"C++, Java",4,MBA,Hire,70.0,0.0,neutral
+692,AI Researcher,"NLP, Python, TensorFlow",7,MBA,Hire,100.0,0.0,neutral
+693,Cybersecurity Analyst,"Cybersecurity, Linux",7,B.Tech,Hire,100.0,0.0,neutral
+694,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking, Cybersecurity",6,B.Sc,Hire,100.0,0.38636000000000004,positive
+695,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking",2,MBA,Hire,75.0,0.38636000000000004,positive
+696,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking, Networking",3,MBA,Hire,100.0,0.38636000000000004,positive
+697,Data Scientist,"Machine Learning, Python, Deep Learning",2,M.Tech,Reject,55.0,0.0,neutral
+698,Cybersecurity Analyst,"Linux, Ethical Hacking",4,B.Tech,Hire,85.0,0.38636000000000004,positive
+699,Cybersecurity Analyst,"Cybersecurity, Networking, Linux",8,M.Tech,Hire,100.0,0.0,neutral
+700,Software Engineer,"Java, SQL",2,M.Tech,Hire,90.0,0.0,neutral
+701,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",4,B.Tech,Hire,70.0,0.38636000000000004,positive
+702,Software Engineer,"React, SQL",8,B.Sc,Hire,100.0,0.0,neutral
+703,Software Engineer,"SQL, Java, C++",9,B.Tech,Hire,100.0,0.0,neutral
+704,AI Researcher,"Pytorch, TensorFlow",9,B.Sc,Hire,100.0,0.0,neutral
+705,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+706,AI Researcher,"Pytorch, TensorFlow, NLP",4,M.Tech,Hire,100.0,0.0,neutral
+707,Software Engineer,"Java, SQL, React",3,MBA,Hire,95.0,0.0,neutral
+708,Data Scientist,"Machine Learning, Python, SQL",2,PhD,Hire,70.0,0.0,neutral
+709,AI Researcher,"NLP, TensorFlow",2,B.Sc,Hire,90.0,0.0,neutral
+710,Cybersecurity Analyst,"Networking, Cybersecurity",3,PhD,Reject,60.0,0.0,neutral
+711,AI Researcher,"Python, TensorFlow, NLP, Pytorch",4,B.Sc,Hire,90.0,0.0,neutral
+712,Software Engineer,"C++, SQL, Java",6,PhD,Hire,100.0,0.0,neutral
+713,AI Researcher,"Python, TensorFlow",0,MBA,Reject,25.0,0.0,neutral
+714,AI Researcher,"NLP, TensorFlow, Python, Pytorch",1,MBA,Reject,50.0,0.0,neutral
+715,Software Engineer,"C++, SQL, Java",0,M.Tech,Reject,25.0,0.0,neutral
+716,AI Researcher,"Python, TensorFlow",6,B.Sc,Hire,90.0,0.0,neutral
+717,Software Engineer,"C++, SQL, React, Java",8,PhD,Hire,100.0,0.0,neutral
+718,Cybersecurity Analyst,"Networking, Ethical Hacking, Linux, Cybersecurity",4,PhD,Hire,70.0,0.38636000000000004,positive
+719,Data Scientist,"SQL, Machine Learning",4,MBA,Hire,85.0,0.0,neutral
+720,AI Researcher,"Pytorch, TensorFlow, Python, NLP",4,M.Tech,Hire,85.0,0.0,neutral
+721,Data Scientist,"SQL, Deep Learning",4,PhD,Hire,90.0,0.0,neutral
+722,Cybersecurity Analyst,"Cybersecurity, Networking",3,PhD,Hire,85.0,0.0,neutral
+723,Data Scientist,"Python, Machine Learning",8,B.Tech,Hire,100.0,0.0,neutral
+724,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity",9,MBA,Hire,100.0,0.38636000000000004,positive
+725,Software Engineer,"C++, Java, SQL, React",2,M.Tech,Reject,50.0,0.0,neutral
+726,Data Scientist,"Python, Deep Learning, Machine Learning",8,B.Tech,Hire,100.0,0.0,neutral
+727,Data Scientist,"Machine Learning, Python, SQL",10,B.Sc,Hire,100.0,0.0,neutral
+728,Data Scientist,"SQL, Machine Learning, Deep Learning",3,PhD,Reject,55.0,0.0,neutral
+729,AI Researcher,"Pytorch, Python, NLP",2,B.Tech,Reject,55.0,0.0,neutral
+730,Software Engineer,"React, C++",7,M.Tech,Hire,100.0,0.0,neutral
+731,Cybersecurity Analyst,"Linux, Networking, Cybersecurity",3,M.Tech,Reject,60.0,0.0,neutral
+732,Cybersecurity Analyst,"Networking, Linux",2,B.Sc,Reject,50.0,0.0,neutral
+733,Data Scientist,"SQL, Machine Learning, Deep Learning, Python",5,PhD,Hire,100.0,0.0,neutral
+734,Software Engineer,"C++, Java, React",5,MBA,Hire,100.0,0.0,neutral
+735,Cybersecurity Analyst,"Networking, Ethical Hacking",1,PhD,Hire,70.0,0.38636000000000004,positive
+736,Software Engineer,"React, Java, C++",5,B.Tech,Hire,75.0,0.0,neutral
+737,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking",3,M.Tech,Reject,60.0,0.38636000000000004,positive
+738,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking",6,MBA,Hire,100.0,0.38636000000000004,positive
+739,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking",5,B.Tech,Hire,100.0,0.38636000000000004,positive
+740,Data Scientist,"Deep Learning, SQL, Machine Learning",6,PhD,Hire,85.0,0.0,neutral
+741,AI Researcher,"Pytorch, Python, TensorFlow",5,MBA,Hire,100.0,0.0,neutral
+742,AI Researcher,"TensorFlow, Pytorch, Python, NLP",7,B.Sc,Hire,100.0,0.0,neutral
+743,Software Engineer,"React, SQL, C++, Java",0,B.Sc,Reject,40.0,0.0,neutral
+744,Data Scientist,"Deep Learning, SQL, Python, Machine Learning",5,M.Tech,Hire,85.0,0.0,neutral
+745,AI Researcher,"Pytorch, NLP, TensorFlow",7,B.Sc,Hire,100.0,0.0,neutral
+746,Software Engineer,"Java, C++, React",0,PhD,Reject,35.0,0.0,neutral
+747,AI Researcher,"NLP, TensorFlow",6,B.Tech,Hire,100.0,0.0,neutral
+748,AI Researcher,"NLP, Pytorch, Python",2,B.Sc,Hire,95.0,0.0,neutral
+749,AI Researcher,"NLP, Pytorch, TensorFlow",2,PhD,Reject,60.0,0.0,neutral
+750,Software Engineer,"C++, React, Java, SQL",1,M.Tech,Reject,45.0,0.0,neutral
+751,Cybersecurity Analyst,"Cybersecurity, Networking, Linux",8,PhD,Hire,100.0,0.0,neutral
+752,Data Scientist,"Deep Learning, Python, SQL",4,B.Tech,Hire,70.0,0.0,neutral
+753,Software Engineer,"React, C++, SQL, Java",9,PhD,Hire,100.0,0.0,neutral
+754,Data Scientist,"Machine Learning, Python, Deep Learning",0,B.Tech,Reject,30.0,0.0,neutral
+755,AI Researcher,"Python, Pytorch, TensorFlow",9,MBA,Hire,100.0,0.0,neutral
+756,Software Engineer,"C++, Java",5,B.Tech,Hire,70.0,0.0,neutral
+757,AI Researcher,"Python, Pytorch, TensorFlow, NLP",6,PhD,Hire,100.0,0.0,neutral
+758,AI Researcher,"Pytorch, Python, TensorFlow",0,B.Tech,Reject,35.0,0.0,neutral
+759,AI Researcher,"NLP, TensorFlow, Pytorch, Python",6,B.Tech,Hire,90.0,0.0,neutral
+760,Data Scientist,"Deep Learning, SQL",1,MBA,Reject,60.0,0.0,neutral
+761,Cybersecurity Analyst,"Ethical Hacking, Linux, Cybersecurity, Networking",6,B.Sc,Hire,100.0,0.38636000000000004,positive
+762,Data Scientist,"Machine Learning, Deep Learning, SQL",6,M.Tech,Hire,100.0,0.0,neutral
+763,Software Engineer,"SQL, Java, React",2,B.Tech,Reject,55.0,0.0,neutral
+764,Data Scientist,"SQL, Deep Learning",6,B.Tech,Hire,85.0,0.0,neutral
+765,Data Scientist,"SQL, Deep Learning, Python",0,B.Tech,Reject,50.0,0.0,neutral
+766,AI Researcher,"Python, TensorFlow, NLP",1,MBA,Hire,75.0,0.0,neutral
+767,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity",0,MBA,Reject,40.0,0.38636000000000004,positive
+768,Software Engineer,"React, SQL, Java, C++",5,B.Sc,Hire,100.0,0.0,neutral
+769,Data Scientist,"Python, Deep Learning, SQL, Machine Learning",9,MBA,Hire,100.0,0.0,neutral
+770,Data Scientist,"SQL, Python",8,MBA,Hire,100.0,0.0,neutral
+771,Cybersecurity Analyst,"Networking, Linux, Cybersecurity, Ethical Hacking",6,PhD,Hire,100.0,0.38636000000000004,positive
+772,AI Researcher,"TensorFlow, Pytorch, Python",9,PhD,Hire,100.0,0.0,neutral
+773,Data Scientist,"SQL, Machine Learning",1,PhD,Reject,50.0,0.0,neutral
+774,AI Researcher,"Python, Pytorch, TensorFlow",0,MBA,Reject,55.0,0.0,neutral
+775,Data Scientist,"Machine Learning, Deep Learning, Python, SQL",4,B.Sc,Hire,100.0,0.0,neutral
+776,AI Researcher,"TensorFlow, Python, Pytorch, NLP",2,PhD,Hire,65.0,0.0,neutral
+777,Data Scientist,"Python, SQL, Deep Learning, Machine Learning",10,M.Tech,Hire,100.0,0.0,neutral
+778,Software Engineer,"SQL, C++, Java",6,B.Sc,Hire,95.0,0.0,neutral
+779,Data Scientist,"Deep Learning, Machine Learning, Python",10,B.Tech,Hire,100.0,0.0,neutral
+780,Software Engineer,"Java, React, C++",10,M.Tech,Hire,100.0,0.0,neutral
+781,AI Researcher,"Python, NLP, Pytorch, TensorFlow",6,PhD,Hire,100.0,0.0,neutral
+782,Data Scientist,"Python, SQL",0,B.Tech,Hire,70.0,0.0,neutral
+783,Software Engineer,"SQL, C++",7,M.Tech,Hire,100.0,0.0,neutral
+784,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity",5,PhD,Hire,95.0,0.38636000000000004,positive
+785,Cybersecurity Analyst,"Linux, Ethical Hacking",5,B.Tech,Hire,100.0,0.38636000000000004,positive
+786,AI Researcher,"Python, Pytorch, TensorFlow, NLP",9,M.Tech,Hire,100.0,0.0,neutral
+787,Data Scientist,"Python, Deep Learning",9,B.Tech,Hire,100.0,0.0,neutral
+788,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking, Cybersecurity",7,PhD,Hire,100.0,0.38636000000000004,positive
+789,AI Researcher,"TensorFlow, NLP",3,B.Tech,Hire,100.0,0.0,neutral
+790,Cybersecurity Analyst,"Linux, Cybersecurity",9,B.Sc,Hire,100.0,0.0,neutral
+791,Software Engineer,"Java, C++, SQL",10,MBA,Hire,100.0,0.0,neutral
+792,Data Scientist,"Deep Learning, Machine Learning, SQL, Python",1,PhD,Hire,70.0,0.0,neutral
+793,Data Scientist,"SQL, Deep Learning, Python, Machine Learning",6,MBA,Hire,100.0,0.0,neutral
+794,Data Scientist,"SQL, Deep Learning, Python, Machine Learning",7,M.Tech,Hire,100.0,0.0,neutral
+795,AI Researcher,"TensorFlow, Python, NLP, Pytorch",10,B.Sc,Hire,100.0,0.0,neutral
+796,Software Engineer,"React, Java, C++, SQL",3,PhD,Hire,70.0,0.0,neutral
+797,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking",7,PhD,Hire,85.0,0.38636000000000004,positive
+798,Cybersecurity Analyst,"Ethical Hacking, Networking, Cybersecurity",1,M.Tech,Hire,70.0,0.38636000000000004,positive
+799,Software Engineer,"SQL, Java, C++",4,B.Tech,Hire,100.0,0.0,neutral
+800,Data Scientist,"Machine Learning, SQL, Python, Deep Learning",7,B.Tech,Hire,100.0,0.0,neutral
+801,AI Researcher,"TensorFlow, NLP, Pytorch, Python",8,M.Tech,Hire,100.0,0.0,neutral
+802,Cybersecurity Analyst,"Networking, Ethical Hacking",6,B.Sc,Hire,100.0,0.38636000000000004,positive
+803,Data Scientist,"Deep Learning, Python, SQL, Machine Learning",8,MBA,Hire,100.0,0.0,neutral
+804,Software Engineer,"SQL, C++",1,B.Tech,Hire,80.0,0.0,neutral
+805,Software Engineer,"SQL, C++, Java, React",4,MBA,Hire,75.0,0.0,neutral
+806,AI Researcher,"TensorFlow, Python, NLP, Pytorch",9,M.Tech,Hire,100.0,0.0,neutral
+807,Data Scientist,"Python, Deep Learning, Machine Learning, SQL",8,B.Tech,Hire,100.0,0.0,neutral
+808,Data Scientist,"Python, Machine Learning, Deep Learning",9,M.Tech,Hire,100.0,0.0,neutral
+809,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",6,B.Tech,Hire,100.0,0.0,neutral
+810,Cybersecurity Analyst,"Linux, Ethical Hacking",8,MBA,Hire,100.0,0.38636000000000004,positive
+811,Data Scientist,"Deep Learning, SQL, Machine Learning, Python",3,B.Sc,Hire,100.0,0.0,neutral
+812,Data Scientist,"Deep Learning, Python, SQL",2,B.Sc,Reject,45.0,0.0,neutral
+813,Data Scientist,"SQL, Python, Machine Learning, Deep Learning",6,M.Tech,Hire,100.0,0.0,neutral
+814,AI Researcher,"TensorFlow, Pytorch",6,M.Tech,Hire,100.0,0.0,neutral
+815,Cybersecurity Analyst,"Ethical Hacking, Networking",5,M.Tech,Hire,90.0,0.38636000000000004,positive
+816,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",8,MBA,Hire,100.0,0.38636000000000004,positive
+817,Software Engineer,"Java, React, SQL",4,PhD,Hire,100.0,0.0,neutral
+818,AI Researcher,"TensorFlow, NLP, Pytorch, Python",1,PhD,Reject,55.0,0.0,neutral
+819,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",4,B.Sc,Hire,85.0,0.0,neutral
+820,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking",4,PhD,Hire,65.0,0.38636000000000004,positive
+821,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux, Networking",1,B.Sc,Reject,50.0,0.38636000000000004,positive
+822,Cybersecurity Analyst,"Ethical Hacking, Networking, Linux, Cybersecurity",0,B.Tech,Reject,30.0,0.38636000000000004,positive
+823,Data Scientist,"SQL, Machine Learning",9,B.Sc,Hire,100.0,0.0,neutral
+824,Software Engineer,"Java, C++, React, SQL",10,PhD,Hire,100.0,0.0,neutral
+825,Software Engineer,"Java, C++, React, SQL",6,B.Tech,Hire,100.0,0.0,neutral
+826,Cybersecurity Analyst,"Linux, Cybersecurity, Ethical Hacking",4,MBA,Hire,70.0,0.38636000000000004,positive
+827,AI Researcher,"TensorFlow, Python",9,PhD,Hire,100.0,0.0,neutral
+828,Software Engineer,"React, SQL",8,M.Tech,Hire,100.0,0.0,neutral
+829,AI Researcher,"TensorFlow, NLP, Python",10,M.Tech,Hire,100.0,0.0,neutral
+830,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",3,MBA,Hire,85.0,0.38636000000000004,positive
+831,AI Researcher,"Pytorch, NLP, Python, TensorFlow",1,MBA,Hire,75.0,0.0,neutral
+832,Software Engineer,"React, C++, Java, SQL",6,B.Tech,Hire,100.0,0.0,neutral
+833,AI Researcher,"Pytorch, Python",4,M.Tech,Hire,65.0,0.0,neutral
+834,Data Scientist,"Python, SQL, Machine Learning",3,MBA,Hire,65.0,0.0,neutral
+835,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Networking, Linux",5,B.Tech,Hire,100.0,0.38636000000000004,positive
+836,Software Engineer,"Java, SQL, C++",8,PhD,Hire,100.0,0.0,neutral
+837,Data Scientist,"Deep Learning, Python",9,B.Tech,Hire,100.0,0.0,neutral
+838,Software Engineer,"React, C++",7,PhD,Hire,100.0,0.0,neutral
+839,Cybersecurity Analyst,"Ethical Hacking, Networking, Cybersecurity, Linux",8,B.Sc,Hire,100.0,0.38636000000000004,positive
+840,Data Scientist,"Machine Learning, Python, SQL",2,MBA,Hire,65.0,0.0,neutral
+841,Cybersecurity Analyst,"Cybersecurity, Networking, Linux, Ethical Hacking",10,M.Tech,Hire,100.0,0.38636000000000004,positive
+842,AI Researcher,"Python, Pytorch",5,MBA,Hire,100.0,0.0,neutral
+843,Data Scientist,"Python, SQL, Deep Learning",3,MBA,Hire,100.0,0.0,neutral
+844,Cybersecurity Analyst,"Ethical Hacking, Linux",2,MBA,Hire,65.0,0.38636000000000004,positive
+845,Data Scientist,"Deep Learning, Machine Learning, SQL",10,B.Tech,Hire,100.0,0.0,neutral
+846,Software Engineer,"React, SQL, C++, Java",8,B.Sc,Hire,100.0,0.0,neutral
+847,Data Scientist,"Deep Learning, Machine Learning",4,B.Tech,Hire,70.0,0.0,neutral
+848,Data Scientist,"Python, SQL, Deep Learning",2,PhD,Hire,85.0,0.0,neutral
+849,Software Engineer,"SQL, Java, React",1,M.Tech,Reject,50.0,0.0,neutral
+850,Data Scientist,"Machine Learning, Python, SQL",2,B.Tech,Reject,55.0,0.0,neutral
+851,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking",7,B.Sc,Hire,100.0,0.38636000000000004,positive
+852,AI Researcher,"Python, Pytorch, NLP, TensorFlow",1,B.Sc,Reject,50.0,0.0,neutral
+853,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",3,MBA,Hire,85.0,0.38636000000000004,positive
+854,AI Researcher,"Python, Pytorch, TensorFlow, NLP",9,M.Tech,Hire,100.0,0.0,neutral
+855,Software Engineer,"SQL, Java",7,M.Tech,Hire,100.0,0.0,neutral
+856,Data Scientist,"Machine Learning, Python, SQL, Deep Learning",6,M.Tech,Hire,100.0,0.0,neutral
+857,Data Scientist,"SQL, Deep Learning, Python",5,MBA,Hire,100.0,0.0,neutral
+858,Cybersecurity Analyst,"Networking, Cybersecurity, Linux",9,B.Tech,Hire,100.0,0.0,neutral
+859,Data Scientist,"Machine Learning, SQL, Deep Learning",10,PhD,Hire,100.0,0.0,neutral
+860,Cybersecurity Analyst,"Linux, Ethical Hacking, Networking",4,M.Tech,Hire,100.0,0.38636000000000004,positive
+861,AI Researcher,"Pytorch, Python",8,B.Tech,Hire,100.0,0.0,neutral
+862,AI Researcher,"TensorFlow, Pytorch, Python, NLP",6,PhD,Hire,100.0,0.0,neutral
+863,Cybersecurity Analyst,"Linux, Networking, Cybersecurity",9,MBA,Hire,100.0,0.0,neutral
+864,Data Scientist,"SQL, Python, Machine Learning, Deep Learning",3,B.Sc,Hire,90.0,0.0,neutral
+865,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking",8,B.Tech,Hire,100.0,0.38636000000000004,positive
+866,AI Researcher,"TensorFlow, Python, NLP",6,PhD,Hire,95.0,0.0,neutral
+867,Data Scientist,"Python, SQL, Machine Learning",10,MBA,Hire,100.0,0.0,neutral
+868,AI Researcher,"Pytorch, Python, TensorFlow, NLP",5,MBA,Hire,100.0,0.0,neutral
+869,Software Engineer,"Java, React, SQL, C++",6,M.Tech,Hire,100.0,0.0,neutral
+870,AI Researcher,"TensorFlow, NLP, Pytorch",6,PhD,Hire,100.0,0.0,neutral
+871,Data Scientist,"SQL, Machine Learning, Python",3,PhD,Hire,100.0,0.0,neutral
+872,Software Engineer,"Java, C++, React, SQL",8,PhD,Hire,100.0,0.0,neutral
+873,Cybersecurity Analyst,"Linux, Cybersecurity",8,MBA,Hire,100.0,0.0,neutral
+874,Data Scientist,"Machine Learning, Python, Deep Learning, SQL",9,B.Tech,Hire,100.0,0.0,neutral
+875,Software Engineer,"C++, React, SQL, Java",5,B.Sc,Hire,100.0,0.0,neutral
+876,Data Scientist,"Python, SQL, Machine Learning, Deep Learning",4,B.Tech,Hire,95.0,0.0,neutral
+877,Data Scientist,"Machine Learning, Deep Learning, Python",3,PhD,Hire,95.0,0.0,neutral
+878,AI Researcher,"TensorFlow, NLP, Python",0,M.Tech,Reject,35.0,0.0,neutral
+879,Data Scientist,"Deep Learning, Machine Learning, SQL, Python",2,PhD,Reject,45.0,0.0,neutral
+880,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Networking, Linux",6,PhD,Hire,95.0,0.38636000000000004,positive
+881,Software Engineer,"React, SQL",9,B.Tech,Hire,100.0,0.0,neutral
+882,Software Engineer,"Java, C++",8,M.Tech,Hire,100.0,0.0,neutral
+883,AI Researcher,"Pytorch, TensorFlow, Python, NLP",4,B.Tech,Hire,85.0,0.0,neutral
+884,Data Scientist,"SQL, Machine Learning",9,PhD,Hire,100.0,0.0,neutral
+885,AI Researcher,"TensorFlow, Pytorch, NLP, Python",4,B.Sc,Hire,100.0,0.0,neutral
+886,Data Scientist,"Machine Learning, Deep Learning",9,PhD,Hire,100.0,0.0,neutral
+887,Data Scientist,"Machine Learning, Deep Learning, SQL",3,PhD,Hire,90.0,0.0,neutral
+888,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Linux",1,B.Sc,Reject,45.0,0.38636000000000004,positive
+889,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux",7,MBA,Hire,100.0,0.38636000000000004,positive
+890,Data Scientist,"Python, Machine Learning, Deep Learning, SQL",7,M.Tech,Hire,100.0,0.0,neutral
+891,Cybersecurity Analyst,"Cybersecurity, Networking",7,M.Tech,Hire,100.0,0.0,neutral
+892,AI Researcher,"Pytorch, TensorFlow, Python",8,M.Tech,Hire,100.0,0.0,neutral
+893,Cybersecurity Analyst,"Ethical Hacking, Networking",6,PhD,Hire,100.0,0.38636000000000004,positive
+894,Software Engineer,"SQL, Java, React, C++",0,MBA,Reject,40.0,0.0,neutral
+895,Software Engineer,"SQL, Java, C++",3,M.Tech,Hire,75.0,0.0,neutral
+896,AI Researcher,"NLP, TensorFlow, Python, Pytorch",6,MBA,Hire,90.0,0.0,neutral
+897,Software Engineer,"React, SQL, Java, C++",2,M.Tech,Hire,65.0,0.0,neutral
+898,AI Researcher,"TensorFlow, NLP, Python, Pytorch",8,M.Tech,Hire,100.0,0.0,neutral
+899,Software Engineer,"Java, SQL",2,MBA,Hire,75.0,0.0,neutral
+900,Cybersecurity Analyst,"Networking, Cybersecurity, Linux",2,PhD,Hire,75.0,0.0,neutral
+901,Cybersecurity Analyst,"Networking, Ethical Hacking, Cybersecurity, Linux",2,MBA,Reject,40.0,0.38636000000000004,positive
+902,AI Researcher,"Pytorch, NLP, Python, TensorFlow",7,M.Tech,Hire,100.0,0.0,neutral
+903,Data Scientist,"Deep Learning, Machine Learning, SQL, Python",6,PhD,Hire,100.0,0.0,neutral
+904,AI Researcher,"Pytorch, Python",9,PhD,Hire,100.0,0.0,neutral
+905,Data Scientist,"Deep Learning, Machine Learning",4,PhD,Reject,60.0,0.0,neutral
+906,Cybersecurity Analyst,"Linux, Ethical Hacking",10,MBA,Hire,100.0,0.38636000000000004,positive
+907,AI Researcher,"Python, TensorFlow, NLP",6,B.Tech,Hire,100.0,0.0,neutral
+908,Data Scientist,"Python, Deep Learning, Machine Learning",0,B.Tech,Reject,55.0,0.0,neutral
+909,AI Researcher,"Python, TensorFlow",5,B.Tech,Hire,70.0,0.0,neutral
+910,Cybersecurity Analyst,"Networking, Linux, Ethical Hacking",3,MBA,Hire,85.0,0.38636000000000004,positive
+911,Data Scientist,"Machine Learning, Deep Learning",6,PhD,Hire,80.0,0.0,neutral
+912,AI Researcher,"NLP, Pytorch, TensorFlow",6,M.Tech,Hire,85.0,0.0,neutral
+913,AI Researcher,"Pytorch, Python, NLP",10,M.Tech,Hire,100.0,0.0,neutral
+914,Data Scientist,"Deep Learning, SQL, Machine Learning",3,B.Tech,Reject,60.0,0.0,neutral
+915,Cybersecurity Analyst,"Linux, Networking, Cybersecurity, Ethical Hacking",3,MBA,Hire,100.0,0.38636000000000004,positive
+916,Data Scientist,"SQL, Python",7,PhD,Hire,85.0,0.0,neutral
+917,AI Researcher,"TensorFlow, Python, NLP, Pytorch",0,M.Tech,Reject,40.0,0.0,neutral
+918,Data Scientist,"Deep Learning, Machine Learning, Python, SQL",5,B.Tech,Hire,75.0,0.0,neutral
+919,Data Scientist,"Deep Learning, Python",5,MBA,Hire,85.0,0.0,neutral
+920,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking",4,MBA,Hire,100.0,0.38636000000000004,positive
+921,Software Engineer,"Java, SQL, React, C++",9,B.Sc,Hire,100.0,0.0,neutral
+922,Cybersecurity Analyst,"Ethical Hacking, Networking",6,PhD,Hire,90.0,0.38636000000000004,positive
+923,AI Researcher,"TensorFlow, Python",7,B.Sc,Hire,95.0,0.0,neutral
+924,Data Scientist,"Python, Machine Learning, Deep Learning, SQL",1,PhD,Hire,70.0,0.0,neutral
+925,Cybersecurity Analyst,"Cybersecurity, Networking, Ethical Hacking",8,PhD,Hire,100.0,0.38636000000000004,positive
+926,Software Engineer,"C++, React, SQL, Java",5,PhD,Hire,100.0,0.0,neutral
+927,Data Scientist,"Machine Learning, SQL",5,B.Sc,Hire,100.0,0.0,neutral
+928,Software Engineer,"C++, SQL, Java, React",7,B.Sc,Hire,100.0,0.0,neutral
+929,Software Engineer,"SQL, C++, Java",1,M.Tech,Reject,50.0,0.0,neutral
+930,AI Researcher,"Pytorch, TensorFlow, NLP, Python",1,M.Tech,Reject,30.0,0.0,neutral
+931,Data Scientist,"Python, Machine Learning",2,B.Sc,Reject,45.0,0.0,neutral
+932,Cybersecurity Analyst,"Linux, Cybersecurity",9,B.Sc,Hire,100.0,0.0,neutral
+933,Software Engineer,"SQL, Java, C++",1,M.Tech,Hire,85.0,0.0,neutral
+934,Data Scientist,"Machine Learning, Deep Learning, Python",10,M.Tech,Hire,100.0,0.0,neutral
+935,Data Scientist,"Python, SQL, Machine Learning",3,PhD,Reject,60.0,0.0,neutral
+936,Data Scientist,"Machine Learning, SQL",2,MBA,Hire,75.0,0.0,neutral
+937,Cybersecurity Analyst,"Ethical Hacking, Linux",9,MBA,Hire,100.0,0.38636000000000004,positive
+938,AI Researcher,"Pytorch, TensorFlow",5,PhD,Hire,90.0,0.0,neutral
+939,Software Engineer,"SQL, C++, Java, React",3,M.Tech,Reject,60.0,0.0,neutral
+940,Cybersecurity Analyst,"Networking, Linux, Cybersecurity",1,PhD,Hire,75.0,0.0,neutral
+941,Cybersecurity Analyst,"Linux, Cybersecurity, Networking, Ethical Hacking",6,B.Tech,Hire,100.0,0.38636000000000004,positive
+942,AI Researcher,"NLP, TensorFlow, Python",2,MBA,Reject,45.0,0.0,neutral
+943,Data Scientist,"Machine Learning, Deep Learning, SQL, Python",2,PhD,Hire,80.0,0.0,neutral
+944,Software Engineer,"Java, React, SQL, C++",3,PhD,Hire,70.0,0.0,neutral
+945,Cybersecurity Analyst,"Ethical Hacking, Cybersecurity, Networking",3,B.Sc,Reject,60.0,0.38636000000000004,positive
+946,Software Engineer,"SQL, Java, React",4,PhD,Hire,90.0,0.0,neutral
+947,Cybersecurity Analyst,"Cybersecurity, Networking, Linux, Ethical Hacking",1,B.Sc,Hire,70.0,0.38636000000000004,positive
+948,Data Scientist,"Python, Deep Learning, Machine Learning, SQL",2,B.Tech,Hire,65.0,0.0,neutral
+949,AI Researcher,"Pytorch, TensorFlow, NLP, Python",10,B.Sc,Hire,100.0,0.0,neutral
+950,Cybersecurity Analyst,"Linux, Ethical Hacking, Networking",5,B.Sc,Hire,75.0,0.38636000000000004,positive
+951,Data Scientist,"Deep Learning, Machine Learning",7,M.Tech,Hire,100.0,0.0,neutral
+952,AI Researcher,"NLP, Pytorch, TensorFlow, Python",0,MBA,Hire,75.0,0.0,neutral
+953,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",6,B.Sc,Hire,100.0,0.0,neutral
+954,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",4,M.Tech,Hire,100.0,0.38636000000000004,positive
+955,Data Scientist,"SQL, Python, Machine Learning, Deep Learning",7,B.Sc,Hire,100.0,0.0,neutral
+956,Data Scientist,"Deep Learning, Python, SQL, Machine Learning",3,B.Sc,Hire,85.0,0.0,neutral
+957,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking, Cybersecurity",6,MBA,Hire,100.0,0.38636000000000004,positive
+958,Cybersecurity Analyst,"Cybersecurity, Networking",7,MBA,Hire,100.0,0.0,neutral
+959,Software Engineer,"C++, SQL, Java",7,B.Sc,Hire,100.0,0.0,neutral
+960,Data Scientist,"Machine Learning, SQL, Python",3,M.Tech,Hire,100.0,0.0,neutral
+961,Data Scientist,"SQL, Machine Learning, Python",3,B.Tech,Hire,70.0,0.0,neutral
+962,Data Scientist,"SQL, Deep Learning, Python",9,B.Sc,Hire,100.0,0.0,neutral
+963,AI Researcher,"Python, NLP, Pytorch, TensorFlow",5,B.Sc,Hire,100.0,0.0,neutral
+964,AI Researcher,"TensorFlow, NLP",6,PhD,Hire,100.0,0.0,neutral
+965,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",2,PhD,Hire,85.0,0.38636000000000004,positive
+966,Data Scientist,"SQL, Machine Learning, Deep Learning",8,M.Tech,Hire,100.0,0.0,neutral
+967,Cybersecurity Analyst,"Ethical Hacking, Linux, Networking, Cybersecurity",6,MBA,Hire,85.0,0.38636000000000004,positive
+968,Data Scientist,"Deep Learning, Python, Machine Learning, SQL",6,B.Sc,Hire,90.0,0.0,neutral
+969,AI Researcher,"Pytorch, TensorFlow",0,M.Tech,Hire,65.0,0.0,neutral
+970,Data Scientist,"Python, Machine Learning, SQL",9,PhD,Hire,100.0,0.0,neutral
+971,Software Engineer,"C++, React, SQL",0,MBA,Reject,50.0,0.0,neutral
+972,Software Engineer,"C++, SQL",8,B.Sc,Hire,100.0,0.0,neutral
+973,AI Researcher,"NLP, Python, Pytorch, TensorFlow",3,MBA,Hire,90.0,0.0,neutral
+974,Software Engineer,"C++, Java, SQL",6,MBA,Hire,90.0,0.0,neutral
+975,AI Researcher,"TensorFlow, Pytorch, NLP, Python",1,B.Tech,Reject,50.0,0.0,neutral
+976,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking, Networking",7,B.Tech,Hire,100.0,0.38636000000000004,positive
+977,AI Researcher,"Python, NLP",3,B.Sc,Hire,75.0,0.0,neutral
+978,Software Engineer,"React, C++, SQL, Java",7,M.Tech,Hire,100.0,0.0,neutral
+979,Data Scientist,"SQL, Deep Learning, Machine Learning",9,B.Sc,Hire,100.0,0.0,neutral
+980,AI Researcher,"TensorFlow, NLP, Python",9,MBA,Hire,100.0,0.0,neutral
+981,Data Scientist,"Python, SQL, Machine Learning",3,B.Tech,Hire,75.0,0.0,neutral
+982,AI Researcher,"NLP, Python",10,PhD,Hire,100.0,0.0,neutral
+983,Software Engineer,"SQL, C++, Java",6,MBA,Hire,80.0,0.0,neutral
+984,AI Researcher,"Pytorch, NLP, Python, TensorFlow",1,M.Tech,Hire,75.0,0.0,neutral
+985,Data Scientist,"SQL, Deep Learning",0,PhD,Reject,60.0,0.0,neutral
+986,Software Engineer,"React, SQL, Java",10,B.Sc,Hire,100.0,0.0,neutral
+987,Data Scientist,"SQL, Deep Learning, Machine Learning",1,MBA,Hire,65.0,0.0,neutral
+988,AI Researcher,"Pytorch, TensorFlow, NLP",2,M.Tech,Hire,65.0,0.0,neutral
+989,AI Researcher,"Python, NLP",5,B.Sc,Hire,100.0,0.0,neutral
+990,Cybersecurity Analyst,"Networking, Cybersecurity, Ethical Hacking, Linux",9,MBA,Hire,100.0,0.38636000000000004,positive
+991,Software Engineer,"React, C++, Java, SQL",5,M.Tech,Hire,100.0,0.0,neutral
+992,Cybersecurity Analyst,"Networking, Ethical Hacking, Linux, Cybersecurity",3,PhD,Hire,100.0,0.38636000000000004,positive
+993,Software Engineer,"React, SQL",10,PhD,Hire,100.0,0.0,neutral
+994,Cybersecurity Analyst,"Cybersecurity, Ethical Hacking, Linux, Networking",1,MBA,Reject,40.0,0.38636000000000004,positive
+995,Software Engineer,"React, Java",4,PhD,Hire,90.0,0.0,neutral
+996,Cybersecurity Analyst,"Cybersecurity, Linux, Ethical Hacking",0,B.Sc,Reject,60.0,0.38636000000000004,positive
+997,Data Scientist,"Deep Learning, Machine Learning",0,MBA,Reject,45.0,0.0,neutral
+998,AI Researcher,"TensorFlow, NLP",0,B.Tech,Hire,65.0,0.0,neutral
+999,Cybersecurity Analyst,"Linux, Networking, Cybersecurity, Ethical Hacking",8,PhD,Hire,100.0,0.38636000000000004,positive
+1000,Data Scientist,"SQL, Machine Learning, Python, Deep Learning",7,M.Tech,Hire,100.0,0.0,neutral
