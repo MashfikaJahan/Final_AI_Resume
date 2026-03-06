@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project investigates whether **small wording differences in resumes** (e.g., "Python" vs. "Python programming," "ML" vs. "Machine Learning") can change **automated resume screening outcomes**—specifically matching scores, rankings, and shortlist inclusion. The study uses a controlled quasi-experimental design: hold the resume constant, change only the wording ("treatment"), and measure how screening outputs change ("outcomes").
+This project investigates whether small wording differences in resumes (e.g., "Python" vs. "Python programming," "ML" vs. "Machine Learning") can change automated resume screening outcomes, specifically matching scores, rankings, and shortlist inclusion. The study uses a controlled quasi-experimental design: hold the resume constant, change only the wording treatment, and measure how screening outputs change outcomes.
 
 The pipeline implements ATS-like screening methods (TF-IDF, BM25, and optional embedding similarity) against a public Kaggle dataset to produce reproducible, quantifiable evidence of wording effects.
 
@@ -31,7 +31,7 @@ Demonstrate and quantify that lexical variation alone changes screening outputs.
 
 ### Phase 2 — Mitigation
 
-Develop evidence-based guidance (and optionally a lightweight tool) to reduce "wording penalties" without misrepresentation.
+Develop evidence-based guidance (and optionally a lightweight tool) to reduce wording penalties without misrepresentation.
 
 - Abbreviation expansion: "Machine Learning (ML)"
 - Dual phrasing: "Python (Python programming)"
@@ -100,7 +100,7 @@ Final_AI_Resume/
 | Top-K Inclusion | Did it enter the top 10 / 25 / 50? |
 | Threshold Pass/Fail | Did it meet a minimum match cutoff? |
 
-All comparisons are **paired** (control vs. variant) under identical job-role / JD conditions.
+All comparisons are paired (control vs. variant) under identical job-role / JD conditions.
 
 ## Statistical Significance Tests
 
@@ -128,7 +128,7 @@ Artifacts are written under `reports/` (with `_no_ai_score` suffix for the scree
 - `logistic_regression_metrics[_no_ai_score].json` – metrics and dataset summary
 - `logistic_regression_coefficients[_no_ai_score].csv` – feature coefficients
 - `logistic_regression_predictions[_no_ai_score].csv` – per-variant predictions
-- `logistic_regression_summary[_no_ai_score].md` – human-readable summary
+- `logistic_regression_summary[_no_ai_score].md` – summary
 - `logistic_regression_coefficients[_no_ai_score].png` – coefficient bar chart (300 DPI)
 - `logistic_regression_roc[_no_ai_score].png` – ROC curve with AUC (300 DPI)
 
