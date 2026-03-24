@@ -16,7 +16,7 @@ The pipeline implements ATS-like screening methods (TF-IDF, BM25, and optional e
 |-----|----------|
 | RQ1 | Do wording variations for the same skills significantly change automated screening scores and rankings? |
 | RQ2 | Which variation types (phrasing, abbreviation expansion, word order, placement) produce the largest rank shifts? |
-| RQ3 | Are wording effects consistent across job roles and screening methods (lexical vs. embedding)? |
+| RQ3 | Are wording effects consistent across job roles and screening methods |
 
 ## Two-Phase Design
 
