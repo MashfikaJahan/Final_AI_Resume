@@ -54,7 +54,7 @@ Final_AI_Resume/
 │   ├── data_loader.py      # Load and validate the Kaggle dataset
 │   ├── preprocessing.py   # Clean text, handle missing values
 │   ├── variant_generator.py # Controlled lexical swaps
-│   ├── scoring.py         # TF-IDF, BM25, embedding similarity
+│   ├── scoring.py         # TF-IDF & BM25
 │   ├── evaluation.py      # Δ score, rank shift, top-K, threshold
 │   ├── statistical_tests.py # Wilcoxon signed-rank + Cohen's d
 │   ├── logistic_regression.py # Logistic regression (full + screening-only)
