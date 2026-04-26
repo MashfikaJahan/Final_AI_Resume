@@ -18,9 +18,7 @@ The pipeline implements ATS-like screening methods (TF-IDF, BM25, and optional e
 | RQ2 | Which variation types (phrasing, abbreviation expansion, word order, placement) produce the largest rank shifts? |
 | RQ3 | Are wording effects consistent across job roles and screening methods? |
 
-## Two-Phase Design
-
-### Phase 1 — Diagnosis
+##  Design
 
 Demonstrate and quantify that lexical variation alone changes screening outputs.
 
@@ -29,14 +27,6 @@ Demonstrate and quantify that lexical variation alone changes screening outputs.
 - Report effect sizes: delta scores, rank shifts, top-K inclusion, threshold pass/fail
 - Identify which variation types matter most
 
-### Phase 2 — Mitigation
-
-Develop evidence-based guidance (and optionally a lightweight tool) to reduce wording penalties without misrepresentation.
-
-- Abbreviation expansion: "Machine Learning (ML)"
-- Dual phrasing: "Python (Python programming)"
-- Placement strategies: dedicated Skills section with key terms
-- Before/after evaluation of rank improvements
 
 ## Project Structure
 
