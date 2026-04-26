@@ -13,7 +13,7 @@ Evaluation is **pipeline-agnostic**: it does not care whether variants came from
 This enables:
 
 - Comparing outcomes across different variant-generation pipelines (e.g., static vs NLP)
-- Adding new scoring methods (e.g., embeddings) without rewriting eval logic
+- Adding new scoring methodsw without rewriting eval logic
 - One eval implementation serving RQ1–RQ3 for all experiments
 
 ---

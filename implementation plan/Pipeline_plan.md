@@ -8,13 +8,13 @@
 
 ## 0. Design Rationale
 
-The current `variant_generator.py` uses **static lookup dictionaries** (`PHRASING_MAP`, `ABBREVIATION_MAP`) to swap keywords. This works but produces a single deterministic variant per type — no lexical diversity, no contextual awareness.
+The current `variant_generator.py` uses **static lookup dictionaries** (`PHRASING_MAP`, `ABBREVIATION_MAP`) to swap keywords. This works but produces a single deterministic variant per type with no lexical diversity, no contextual awareness.
 
 The upgraded pipeline replaces static maps with **NLP-driven synonym/paraphrase generation** so that:
 
-1. Variants are **semantically equivalent but lexically distinct** — the same skill described with slightly different words.
+1. Variants are semantically equivalent but lexically distinct. The same skill described with slightly different words.
 2. The replacement engine understands context (e.g., "Python" in a data-science resume vs. "Python" in a web-dev resume can yield different phrasing).
-3. Sentiment/tone of the original skill description is **measured and preserved** — a professional-sounding resume should not get a casual variant.
+3. Sentiment/tone of the original skill description is measured and preserved. A professional-sounding resume should not get a casual variant.
 
 This directly supports RQ1 ("Do wording variations change screening scores?") with richer, more realistic variation than dictionary lookups alone.
 
@@ -185,7 +185,7 @@ The upgraded generator keeps the four variant types (`phrasing`, `abbreviation`,
 | **Domain thesaurus** | Curated dict of tech-specific synonyms not in WordNet | Handles tech terms WordNet doesn't cover well ("TensorFlow" → "TF framework", "React" → "React.js") | Secondary (fallback when WordNet has no useful synsets) |
 | **Contextual paraphrase** | spaCy token similarity + word vectors | Rank candidate synonyms by contextual fit within the skill list | Ranking layer on top of WordNet/thesaurus candidates |
 
-**Why not a generative LLM?** Reproducibility. WordNet + curated thesaurus is deterministic given a seed. LLM outputs vary across runs and API versions, breaking the study's reproducibility requirement.
+**Why not a generative LLM?** Reproducibility. WordNet & curated thesaurus is deterministic given a seed. LLM outputs vary across runs and API versions, breaking the study's reproducibility requirement.
 
 #### 3.2.2 NLP Replacement Algorithm
 
@@ -299,7 +299,7 @@ def _select_candidate(
     """
 ```
 
-This gives us **slight variation across runs with different seeds** while keeping results reproducible for any given seed.
+This gives us slight variation across runs with different seeds while keeping results reproducible for any given seed.
 
 ### 3.3 Updated Variant Type Implementations
 
@@ -351,7 +351,7 @@ Covered fully by `DATA_INGESTION_PLAN.md`. No modifications needed.
 
 ---
 
-### Stage 2: Sentiment Baseline (NEW)
+### Stage 2: Sentiment Baseline
 
 | Property | Value |
 |----------|-------|

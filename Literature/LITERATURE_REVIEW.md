@@ -72,13 +72,13 @@
 
 1. Abhishek, K. L., Niranjanamurthy, M., Aric, S., Ansarullah, S. I., Sinha, A., Tejani, G., & Shah, M. A. (2025). Developing an intelligent resume screening tool with AI-driven analysis and recommendation features. *Applied AI Letters*, 6, e116. https://doi.org/10.1002/ail2.116
 
-2. Daryani, C., Chhabra, G. S., Patel, H., Chhabra, I. K., & Patel, R. (2020). An automated resume screening system using natural language processing and similarity. *Topics in Intelligent Computing and Industry Design*, 2(2), 99–103. https://doi.org/10.26480/etit.02.2020.99.103
+2. Daryani, C., Chhabra, G. S., Patel, H., Chhabra, I. K., & Patel, R. (2020). An automated resume screening system using natural language processing and similarity. *Topics in Intelligent Computing and Industry Design*, 2(2), 99–103. 10.26480/etit.02.2020.99.103
 
 3. Deshpande, K. V., Pan, S., & Foulds, J. R. (2020). Mitigating demographic bias in AI-based resume filtering. In *Adjunct Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '20)* (pp. 1–6). ACM. https://dl.acm.org/doi/10.1145/3386392.3399569
 
 4. Madera, J. M., Ng, L., Zajac, S., & Hebl, M. R. (2024). When words matter: Communal and agentic language on men and women's resumes. *Journal of Business and Psychology*, 40(2), 479–496. https://doi.org/10.1007/s10869-024-09969-0
 
-5. Robertson, S., & Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and beyond. *Foundations and Trends in Information Retrieval*, 3(4), 333–389. DOI: 10.1561/1500000019
+5. Robertson, S., & Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and beyond. *Foundations and Trends in Information Retrieval*, 3(4), 333–389. 10.1561/1500000019
 
 6. Rozado, D. (2025). Gender and positional biases in LLM-based hiring decisions: Evidence from comparative CV/résumé evaluations. *PeerJ Computer Science*, 11, e3628. https://doi.org/10.7717/peerj-cs.3628
 
