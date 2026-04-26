@@ -1,0 +1,9 @@
+services:
+  pipeline:
+    build: .
+    volumes:
+      - ./Dataset:/app/Dataset:ro
+      - ./data/processed:/app/data/processed
+      - ./outputs:/app/outputs
+      - ./reports:/app/reports
+      - ./configs:/app/configs:ro
