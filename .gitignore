@@ -183,6 +183,9 @@ cython_debug/
 # Cursor project metadata (local editor state)
 .cursor/
 
+# Docker
+.dockerignore
+
 # macOS
 .DS_Store
 
