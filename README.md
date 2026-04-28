@@ -79,7 +79,6 @@ Final_AI_Resume/
 |--------|------|---------|
 | TF-IDF cosine similarity | Lexical | Closest proxy to ATS keyword matching |
 | BM25 | Lexical | Probabilistic relevance ranking |
-| Sentence embeddings (optional) | Semantic | Tests whether semantic methods reduce wording penalties |
 
 ## Evaluation Metrics
 
